@@ -1,0 +1,110 @@
+body {
+  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+}
+.logo {
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  position: fixed;
+  width: 100%;
+}
+
+.wrapper nav {
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav li a {
+  font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #000;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #000;
+}
+
+.dropdown {
+  visibility: hidden;
+  background-color: #d9e2d9;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+.dropdown__jackets {
+  margin-left: 50px;
+}
+
+.dropdown__jackets a {
+  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dropdown li {
+  clear: both;
+  width: 100%;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+ul li:hover > ul,
+.dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.search-container {
+  width: 400px;
+  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: #425c42;
+  border: none;
+  border-bottom: 2px solid #425c42;
+}
+
+.search-container:focus {
+  outline: none;
+}
+
+#submit {
+  border: none;
+  color: #425c42;
+  background-color: transparent;
+}
+
+::placeholder {
+  color: #425c42;
+  opacity: 1;
+}
