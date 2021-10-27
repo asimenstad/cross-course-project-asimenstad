@@ -1,9 +1,13 @@
-body {
+h1 {
+  font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2,
+p {
   font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
-}
-.logo {
-  height: 100px;
 }
 
 a {
@@ -11,74 +15,146 @@ a {
   color: #000;
 }
 
-.wrapper {
-  position: fixed;
+/* Navbar */
+
+.logo {
+  height: 50px;
+  margin-top: 10px;
+}
+
+.cart {
+  height: 30px;
+}
+
+.nav__container {
   width: 100%;
 }
 
-.wrapper nav {
+.nav__container nav {
   position: relative;
   display: flex;
-  max-width: calc(100% - 200px);
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: calc(100% - 100px);
   margin: 0 auto;
   height: 120px;
   align-items: center;
   justify-content: space-between;
 }
 
-nav li a {
-  font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
+.nav__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-ul {
+.nav__column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.nav__column-info {
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.nav__column-logo {
+  align-self: flex-end;
+}
+
+.nav__column-search {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  align-items: center;
+  padding: 1rem;
+  flex: 2;
+}
+
+.nav__column-cart {
+  align-items: flex-end;
+  padding: 1rem;
+  padding-right: 0;
+}
+
+nav li a {
+  font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
+}
+
+nav ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-li {
+nav li {
   color: #000;
   display: block;
   float: left;
   padding: 1rem;
+  padding-left: 0;
+  padding-right: 2.7rem;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
 }
 
-li a {
-  color: #000;
+.nav__column-info ul li {
+  display: block;
+  float: right;
+  padding: 1rem;
+  padding-right: 0;
+}
+
+.nav__column-info ul li a,
+.dropdown__jackets li a {
+  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
+  color: #425c42;
 }
 
 .dropdown {
-  visibility: hidden;
   background-color: #d9e2d9;
   min-width: 5rem;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 1rem;
   left: 0;
   display: none;
+  z-index: 1;
 }
 
 .dropdown__jackets {
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 .dropdown__jackets a {
   font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.nav__column .dropdown {
+  padding: 2rem 3rem;
+  margin: 0;
+}
+
 .dropdown li {
   clear: both;
   width: 100%;
+  padding: 10px;
 }
 
-li:hover {
+nav li:hover {
   text-decoration: underline;
 }
 
-ul li:hover > ul,
+.nav__column-info ul li:hover,
+.dropdown__jackets li:hover {
+  text-decoration: none;
+  font-style: italic;
+}
+
+nav ul li:hover > ul,
 .dropdown:hover {
   visibility: visible;
   opacity: 1;
@@ -107,4 +183,66 @@ ul li:hover > ul,
 ::placeholder {
   color: #425c42;
   opacity: 1;
+}
+
+/* Home page*/
+
+.new-arrivals {
+  background-image: url(../images/new-arrivals.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  min-height: 80vh;
+  position: relative;
+  max-width: calc(100% - 100px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta {
+  background-color: #425c42;
+  color: #fff;
+  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 40%;
+}
+.cta:hover {
+  background-color: transparent;
+  border: 2.5px solid #425c42;
+  color: #425c42;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 8px 28px;
+  border-radius: 10px;
+}
+
+.featured-products,
+.featured-categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: auto;
+  grid-gap: 10px;
+  max-width: calc(100% - 100px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+.featured-products h2,
+.featured-categories h2 {
+  grid-column: -1/1;
+}
+
+.featured-products img,
+.featured-categories img {
+  width: 100%;
+  min-width: 300px;
 }

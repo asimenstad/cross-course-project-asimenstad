@@ -1,72 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Browse our large selection of rain jackets for all kinds of adventures" />
-  <title>RainyDays | Home</title>
-  <link href="css/styles.css" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/0c995894a1.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/nbd4exz.css">
-</head>
-<body>
-<header> 
- <div class="wrapper">
-  
- <nav>
-  <a href="index.html"><img src="assets/logo-slogan.png" alt="RainyDays logo" class="logo"></a>
-  <ul>
-    <li><a href="#">Women</a>
-      <ul class="dropdown">
-        <li><a href="#">New Arrivals</a></li>
-        <li><a href="#">Best Sellers</a></li>
-        <li>
-          <a href="#">Jackets</a>
-          <ul class="dropdown__jackets">
-            <li><a href="#">All</a></li>
-            <li><a href="#">Hiking</a></li>
-            <li><a href="#">Fishing</a></li>
-            <li><a href="#">Running</a></li>
-            <li><a href="#">Skiing</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Sale</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Men</a>
-      <ul class="dropdown">
-        <li><a href="#">New Arrivals</a></li>
-        <li><a href="#">Best Sellers</a></li>
-        <li>
-          <a href="#">Jackets</a>
-          <ul class="dropdown__jackets">
-            <li><a href="#">All</a></li>
-            <li><a href="#">Hiking</a></li>
-            <li><a href="#">Fishing</a></li>
-            <li><a href="#">Running</a></li>
-            <li><a href="#">Skiing</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Sale</a></li>
-      </ul>
-    </li>
-  </ul>
-      <div>
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search products" name="search" class="search-container">
-          <button type="submit" id="submit"><i class="fas fa-search"></i></button>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse our large selection of rain jackets for all kinds of adventures" />
+    <title>RainyDays | Home</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0c995894a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nbd4exz.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav__container">
+        <nav>
+          <div class="nav__row">
+            <div class="nav__column nav__column-logo">
+              <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
+            </div>
+            <div class="nav__column nav__column-info">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav__row">
+            <div class="nav__column">
+              <ul>
+                <li>
+                  <a href="#">Women</a>
+                  <ul class="dropdown">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li>
+                      <a href="#">Jackets</a>
+                      <ul class="dropdown__jackets">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Hiking</a></li>
+                        <li><a href="#">Fishing</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Skiing</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Sale</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Men</a>
+                  <ul class="dropdown">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li>
+                      <a href="#">Jackets</a>
+                      <ul class="dropdown__jackets">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Hiking</a></li>
+                        <li><a href="#">Fishing</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Skiing</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Sale</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__column nav__column-search">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search products" name="search" class="search-container" />
+                <button type="submit" id="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class="nav__column nav__column-cart">
+              <a href="#"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
+            </div>
+          </div>
+        </nav>
       </div>
-      <div>
+    </header>
+    <main>
+      <section class="new-arrivals">
+        <div class="new-arrivals__content">
+          <a href="#" class="cta">Shop new arrivals</a>
+        </div>
+      </section>
+      <h1>Popular now</h1>
+      <section class="featured-products">
+        <div class="popular-products">
+          <img src="images/product1.jpg" alt="Patrick jacket" />
+          <p>550 KR</p>
+          <h2>Patrick Jacket</h2>
+        </div>
+        <div class="popular-products">
+          <img src="images/product2.jpg" alt="Anna Hiking Jacket" />
+          <p>550 KR</p>
+          <h2>Anna Hiking Jacket</h2>
+        </div>
+        <div class="popular-products">
+          <img src="images/product3.jpg" alt="Edward Jacket" />
+          <p>550 KR</p>
+          <h2>Edward Jacket</h2>
+        </div>
+        <div class="popular-products">
+          <img src="images/product4.jpg" alt="Harry Snow Jacket" />
+          <p>550 KR</p>
+          <h2>Harry Snow Jacket</h2>
+        </div>
+      </section>
+      <h1>Rain jackets for every adventure</h1>
+      <section class="featured-categories">
+        <div class="categories">
+          <img src="images/hiking.jpg" alt="Category: hiking" />
+        </div>
+        <div class="categories">
+          <img src="images/fishing.jpg" alt="Category: fishing" />
+        </div>
+        <div class="categories">
+          <img src="images/running.jpg" alt="Category: running" />
+        </div>
+        <div class="categories">
+          <img src="images/skiing.jpg" alt="Category: skiing" />
+        </div>
+      </section>
+    </main>
+    <footer>
       <a href="#">About</a>
       <a href="#">Contact</a>
-      </div>
-      <a href="#"><i class="fas fa-shopping-bag"></i></a>
-  </nav>
-</div> 
-</header>
+      <a href="#"><img src="assets/icon-instagram.svg" alt="" /></a>
+      <a href="#"><img src="assets/Icon-facebook.svg" alt="" /></a>
+      <a href="#"><img src="assets/Icon-twitter.svg" alt="" /></a>
+    </footer>
+  </body>
 </html>
