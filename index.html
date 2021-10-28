@@ -15,72 +15,79 @@
   </head>
   <body>
     <header>
-      <div class="nav__container">
-        <nav>
-          <div class="nav__row">
-            <div class="nav__column nav__column-logo">
-              <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
-            </div>
-            <div class="nav__column nav__column-info">
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="nav__row">
-            <div class="nav__column">
-              <ul>
-                <li>
-                  <a href="#">Women</a>
-                  <ul class="dropdown">
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li>
-                      <a href="#">Jackets</a>
-                      <ul class="dropdown__jackets">
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Hiking</a></li>
-                        <li><a href="#">Fishing</a></li>
-                        <li><a href="#">Running</a></li>
-                        <li><a href="#">Skiing</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Sale</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Men</a>
-                  <ul class="dropdown">
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li>
-                      <a href="#">Jackets</a>
-                      <ul class="dropdown__jackets">
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Hiking</a></li>
-                        <li><a href="#">Fishing</a></li>
-                        <li><a href="#">Running</a></li>
-                        <li><a href="#">Skiing</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Sale</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="nav__column nav__column-search">
-              <form action="/action_page.php">
-                <input type="text" placeholder="Search products" name="search" class="search-container" />
-                <button type="submit" id="submit"><i class="fas fa-search"></i></button>
-              </form>
-            </div>
-            <div class="nav__column nav__column-cart">
-              <a href="#"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
-            </div>
-          </div>
-        </nav>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="mobile-logo">
+        <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
       </div>
+      <div class="mobile-cart">
+        <a href="#"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
+      </div>
+
+      <nav>
+        <div class="nav__row nav__row-one">
+          <div class="nav__column nav__column-logo">
+            <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
+          </div>
+          <div class="nav__column nav__column-info">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav__row nav__row-two">
+          <div class="nav__column">
+            <ul>
+              <li>
+                <a href="#">Women</a>
+                <ul class="dropdown">
+                  <li><a href="#">New Arrivals</a></li>
+                  <li><a href="#">Best Sellers</a></li>
+                  <li>
+                    <a href="#">Jackets</a>
+                    <ul class="dropdown__jackets">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Hiking</a></li>
+                      <li><a href="#">Fishing</a></li>
+                      <li><a href="#">Running</a></li>
+                      <li><a href="#">Skiing</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Sale</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Men</a>
+                <ul class="dropdown">
+                  <li><a href="#">New Arrivals</a></li>
+                  <li><a href="#">Best Sellers</a></li>
+                  <li>
+                    <a href="#">Jackets</a>
+                    <ul class="dropdown__jackets">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Hiking</a></li>
+                      <li><a href="#">Fishing</a></li>
+                      <li><a href="#">Running</a></li>
+                      <li><a href="#">Skiing</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Sale</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__column nav__column-search">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search products" name="search" class="search-container" />
+              <button type="submit" id="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <div class="nav__column nav__column-cart">
+            <a href="#"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="new-arrivals">
@@ -91,48 +98,74 @@
       <h1>Popular now</h1>
       <section class="featured-products">
         <div class="popular-products">
-          <img src="images/product1.jpg" alt="Patrick jacket" />
+          <a href="#"><img src="images/product1.jpg" alt="Product image of Patrick jacket" /></a>
+          <span class="colour-swatch colour-swatch-one"></span>
+          <span class="colour-swatch colour-swatch-two"></span>
           <p>550 KR</p>
-          <h2>Patrick Jacket</h2>
+          <a href="#"><h2>Patrick Jacket</h2></a>
         </div>
         <div class="popular-products">
-          <img src="images/product2.jpg" alt="Anna Hiking Jacket" />
-          <p>550 KR</p>
-          <h2>Anna Hiking Jacket</h2>
+          <a href="#"><img src="images/product2.jpg" alt="Product image of Anna Hiking Jacket" /></a>
+          <span class="colour-swatch colour-swatch-one"></span>
+          <span class="colour-swatch colour-swatch-two"></span>
+          <p>500 KR</p>
+          <a href="#"><h2>Anna Hiking Jacket</h2></a>
         </div>
         <div class="popular-products">
-          <img src="images/product3.jpg" alt="Edward Jacket" />
-          <p>550 KR</p>
-          <h2>Edward Jacket</h2>
+          <a href="#"> <img src="images/product3.jpg" alt="Product image of Edward Jacket" /></a>
+          <span class="colour-swatch colour-swatch-one"></span>
+          <span class="colour-swatch colour-swatch-two"></span>
+          <p>450 KR</p>
+          <a href="#"> <h2>Edward Jacket</h2></a>
         </div>
         <div class="popular-products">
-          <img src="images/product4.jpg" alt="Harry Snow Jacket" />
-          <p>550 KR</p>
-          <h2>Harry Snow Jacket</h2>
+          <a href="#"> <img src="images/product4.jpg" alt="Product image of Harry Snow Jacket" /></a>
+          <span class="colour-swatch colour-swatch-one"></span>
+          <span class="colour-swatch colour-swatch-two"></span>
+          <p>650 KR</p>
+          <a href="#"><h2>Harry Snow Jacket</h2></a>
         </div>
       </section>
       <h1>Rain jackets for every adventure</h1>
       <section class="featured-categories">
         <div class="categories">
-          <img src="images/hiking.jpg" alt="Category: hiking" />
+          <a href="#" class="cta-small">Hiking</a>
+          <img src="images/hiking.jpg" alt="Image of category: hiking" />
         </div>
         <div class="categories">
-          <img src="images/fishing.jpg" alt="Category: fishing" />
+          <a href="#" class="cta-small">Fishing</a>
+          <img src="images/fishing.jpg" alt="Image of category: fishing" />
         </div>
         <div class="categories">
-          <img src="images/running.jpg" alt="Category: running" />
+          <a href="#" class="cta-small">Running</a>
+          <img src="images/running.jpg" alt="Image of category: running" />
         </div>
         <div class="categories">
-          <img src="images/skiing.jpg" alt="Category: skiing" />
+          <a href="#" class="cta-small">Skiing</a>
+          <img src="images/skiing.jpg" alt="Image of category: skiing" />
         </div>
       </section>
     </main>
     <footer>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#"><img src="assets/icon-instagram.svg" alt="" /></a>
-      <a href="#"><img src="assets/Icon-facebook.svg" alt="" /></a>
-      <a href="#"><img src="assets/Icon-twitter.svg" alt="" /></a>
+      <div class="links">
+        <ul>
+          <li><a href="#">About RainyDays</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#"><img src="assets/icon-instagram.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-twitter.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
