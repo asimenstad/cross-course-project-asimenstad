@@ -7,7 +7,7 @@ h1 {
   font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   margin-top: 50px;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h2,
@@ -54,12 +54,12 @@ nav {
   justify-content: space-between;
 }
 
-header label {
+#hamburger-menu {
   display: none;
 }
 
-#hamburger-menu {
-  display: none;
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 .mobile-logo {
@@ -253,7 +253,7 @@ nav ul li:hover > ul,
 }
 
 .cta-small {
-  margin-top: 140px;
+  align-self: center;
 }
 
 .cta:hover,
@@ -265,7 +265,7 @@ nav ul li:hover > ul,
 .featured-products,
 .featured-categories {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: auto;
   grid-gap: 10px;
   max-width: calc(100% - 7%);
@@ -304,17 +304,19 @@ nav ul li:hover > ul,
 /* Footer */
 
 footer {
+  clear: both;
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
   background-color: #d9e2d9;
-  height: 150px;
+  height: 200px;
 }
 
 footer div {
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 footer ul li {
@@ -322,50 +324,76 @@ footer ul li {
   padding: 1rem;
 }
 
-footer .links {
-  float: left;
-  margin: 3.5rem auto auto auto;
-  text-align: right;
-}
-
+footer .links,
 footer .social {
-  float: right;
-  margin: 3rem auto auto auto;
-  bottom: 0;
-  text-align: left;
+  text-align: center;
+  flex-direction: row;
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+footer .links li {
+  display: block;
+}
+
+@media screen and (min-width: 400px) {
+  header label {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
   .featured-products,
   .featured-categories {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cta-small {
-    margin-top: 5rem;
+  h1 {
+    font-size: 2em;
+  }
+
+  header label {
+    display: none;
   }
 
   #hamburger-menu {
     display: none;
   }
 
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 920px) {
-  .featured-products,
-  .featured-categories {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .new-arrivals {
     width: 100%;
   }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 20px;
+  }
+
+  footer .links {
+    float: left;
+    margin: 3.5rem auto auto auto;
+    text-align: right;
+  }
+
+  footer .social {
+    float: right;
+    margin: 3rem auto auto auto;
+    bottom: 0;
+    text-align: left;
+  }
+
+  footer .links li {
+    display: inline-block;
+  }
 }
-@media screen and (min-width: 920px) and (max-width: 1000px) {
-  .search-container {
-    width: 300px;
+
+@media screen and (min-width: 800px) {
+  .featured-products,
+  .featured-categories {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
