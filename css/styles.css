@@ -217,6 +217,7 @@ nav ul li:hover > ul,
 /* Home page*/
 
 .new-arrivals {
+  display: grid;
   background-image: url(../images/new-arrivals.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -227,10 +228,6 @@ nav ul li:hover > ul,
   max-width: calc(100% - 7%);
   margin-left: auto;
   margin-right: auto;
-}
-
-.new-arrivals__content {
-  display: grid;
 }
 
 .cta,
@@ -246,13 +243,6 @@ nav ul li:hover > ul,
   text-align: center;
   border: 2.5px solid #425c42;
   justify-self: center;
-}
-
-.cta {
-  margin-top: 300px;
-}
-
-.cta-small {
   align-self: center;
 }
 
