@@ -25,9 +25,18 @@ p {
   font-size: 1em;
 }
 
+/* Links */
+
 a {
-  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
   text-decoration: none;
+}
+
+.nav__column-info ul li a,
+.dropdown__jackets li a,
+footer a {
+  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
   color: #425c42;
 }
 
@@ -52,22 +61,6 @@ nav {
   height: 120px;
   align-items: center;
   justify-content: space-between;
-}
-
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-
-.mobile-logo {
-  display: none;
-}
-
-.mobile-cart {
-  display: none;
 }
 
 .nav__row {
@@ -107,11 +100,6 @@ nav {
   padding-right: 0;
 }
 
-nav li a {
-  font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
-  color: #000;
-}
-
 nav ul {
   list-style: none;
   margin: 0;
@@ -137,12 +125,6 @@ nav li {
   padding-right: 0;
 }
 
-.nav__column-info ul li a,
-.dropdown__jackets li a {
-  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
-  color: #425c42;
-}
-
 .dropdown {
   background-color: #d9e2d9;
   min-width: 5rem;
@@ -155,10 +137,6 @@ nav li {
 
 .dropdown__jackets {
   margin-left: 70px;
-}
-
-.dropdown__jackets a {
-  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav__column .dropdown {
@@ -324,16 +302,6 @@ footer .links li {
   display: block;
 }
 
-@media screen and (min-width: 400px) {
-  header label {
-    display: none;
-  }
-
-  #hamburger-menu {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 600px) {
   .featured-products,
   .featured-categories {
@@ -342,14 +310,6 @@ footer .links li {
 
   h1 {
     font-size: 2em;
-  }
-
-  header label {
-    display: none;
-  }
-
-  #hamburger-menu {
-    display: none;
   }
 
   .new-arrivals {
