@@ -15,66 +15,63 @@
   </head>
   <body>
     <header>
+      <div>
+        <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
+        <a href="#"><img src="assets/icon-cart.svg" alt="Cart" class="mobile-cart" /></a>
+      </div>
       <nav>
-        <div class="nav__row nav__row-one">
-          <div class="nav__column nav__column-logo">
-            <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
-          </div>
-          <div class="nav__column nav__column-info">
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="nav__row nav__row-two">
-          <div class="nav__column">
-            <ul>
-              <li>
-                <a href="#">Women</a>
-                <ul class="dropdown">
-                  <li><a href="#">New Arrivals</a></li>
-                  <li><a href="#">Best Sellers</a></li>
-                  <li>
-                    <a href="#">Jackets</a>
-                    <ul class="dropdown__jackets">
-                      <li><a href="#">All</a></li>
-                      <li><a href="#">Hiking</a></li>
-                      <li><a href="#">Fishing</a></li>
-                      <li><a href="#">Running</a></li>
-                      <li><a href="#">Skiing</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Sale</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Men</a>
-                <ul class="dropdown">
-                  <li><a href="#">New Arrivals</a></li>
-                  <li><a href="#">Best Sellers</a></li>
-                  <li>
-                    <a href="#">Jackets</a>
-                    <ul class="dropdown__jackets">
-                      <li><a href="#">All</a></li>
-                      <li><a href="#">Hiking</a></li>
-                      <li><a href="#">Fishing</a></li>
-                      <li><a href="#">Running</a></li>
-                      <li><a href="#">Skiing</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Sale</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="nav__column nav__column-search">
-            <form action="/action_page.php">
-              <input type="text" placeholder="Search products" name="search" class="search-container" />
-              <button type="submit" id="submit"><i class="fas fa-search"></i></button>
-            </form>
-          </div>
-          <div class="nav__column nav__column-cart">
+        <div>
+          <ul class="products">
+            <li>
+              <a href="#">Women</a>
+              <ul class="dropdown">
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li>
+                  <a href="#"
+                    >Jackets <button type="submit" id="submit"><i class="fas fa-chevron-down"></i></button
+                  ></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Hiking</a></li>
+                    <li><a href="#">Fishing</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Sale</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Men</a>
+              <ul class="dropdown">
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li>
+                  <a href="#"
+                    >Jackets <button type="submit" id="submit"><i class="fas fa-chevron-down"></i></button
+                  ></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Hiking</a></li>
+                    <li><a href="#">Fishing</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Sale</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form action="/action_page.php" class="search">
+            <input type="text" placeholder="Search products" name="search" class="search-container" />
+            <button type="submit" id="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <ul class="info">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="desktop-cart">
             <a href="#"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
           </div>
         </div>
