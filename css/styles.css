@@ -48,7 +48,16 @@ header {
   background-color: #fff;
   position: fixed;
   width: 100%;
+  height: 80px;
   z-index: 9999;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 .mobile-cart {
@@ -334,6 +343,10 @@ footer .links li {
     text-align: left;
   }
 
+  header label {
+    display: none;
+  }
+
   .logo {
     padding-left: 50px;
   }
@@ -366,7 +379,7 @@ footer .links li {
     flex-grow: 1;
     text-align: center;
     order: 2;
-    width: 40%;
+    width: 60%;
   }
 
   .info {
@@ -374,8 +387,9 @@ footer .links li {
     justify-content: right;
     flex-wrap: nowrap;
     order: 3;
-    width: 20%;
+    width: 15%;
   }
+
   .info li {
     width: 40px;
   }
@@ -407,7 +421,7 @@ footer .links li {
     display: flex;
     justify-content: right;
     order: 4;
-    width: 10%;
+    width: 5%;
   }
 
   main {
