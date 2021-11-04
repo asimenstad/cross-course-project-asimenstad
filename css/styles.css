@@ -60,14 +60,18 @@ header {
   display: block;
 }
 
-.mobile-cart {
-  display: inline-block;
-  height: 30px;
+.hamburger {
+  float: left;
+  font-size: 30px;
+  padding-top: 33px;
+  padding-left: 50px;
 }
 
 .cart {
-  display: none;
   height: 30px;
+  float: right;
+  padding-top: 30px;
+  padding-right: 50px;
 }
 
 .logo {
@@ -89,15 +93,11 @@ nav div {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding-left: 0;
 }
 
 nav li {
   color: #000;
   display: block;
-  padding: 1rem;
-  padding-left: 0;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
@@ -112,6 +112,7 @@ nav li {
 
 .info {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   order: 3;
   width: 100%;
@@ -119,7 +120,7 @@ nav li {
 }
 
 .info li {
-  width: 100%;
+  padding-left: 20px;
 }
 
 .dropdown {
@@ -372,26 +373,27 @@ footer .links li {
     display: flex;
     flex-direction: row;
     order: 1;
-    width: 20%;
+    flex: 1;
+  }
+
+  .products li {
+    padding-right: 20px;
   }
 
   .search {
     flex-grow: 1;
     text-align: center;
     order: 2;
-    width: 60%;
+    flex: 2;
   }
 
   .info {
-    display: flex;
+    flex-direction: row;
     justify-content: right;
     flex-wrap: nowrap;
     order: 3;
-    width: 15%;
-  }
-
-  .info li {
-    width: 40px;
+    flex: 1;
+    text-align: right;
   }
 
   .dropdown {
@@ -407,21 +409,6 @@ footer .links li {
 
   .dropdown__jackets {
     display: block;
-  }
-
-  .mobile-cart {
-    display: none;
-  }
-
-  .cart {
-    display: inline-block;
-  }
-
-  .desktop-cart {
-    display: flex;
-    justify-content: right;
-    order: 4;
-    width: 5%;
   }
 
   main {
