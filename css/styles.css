@@ -3,16 +3,20 @@
   padding: 0;
 }
 
+h2,
+h3,
+p {
+  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h2 {
-  font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 40px;
   font-size: 1.5em;
 }
 
 h3,
 p {
-  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   color: #000;
 }
@@ -31,7 +35,8 @@ p {
 
 /* Links */
 
-a {
+a,
+li {
   font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
   color: #000;
   text-decoration: none;
@@ -40,7 +45,9 @@ a {
 
 .info li a,
 .dropdown__jackets li a,
-footer a {
+footer a,
+.nav__breadcrumb li,
+.nav__breadcrumb li a {
   color: #425c42;
   font-weight: 400;
 }
@@ -273,6 +280,31 @@ main {
   background-color: #fff;
 }
 
+/* Product page */
+.nav__breadcrumb {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.nav__breadcrumb li {
+  padding-right: 15px;
+  padding-top: 40px;
+  font-style: itaic;
+}
+
+.nav__breadcrumb li a {
+  font-style: normal;
+}
+
+.back-button {
+  margin-left: 50px;
+  margin-top: 45px;
+  font-size: 2em;
+  position: absolute;
+}
+
 /* Footer */
 
 footer {
@@ -425,11 +457,15 @@ footer .links li {
   }
 
   main {
-    padding-top: 100px;
+    padding-top: 110px;
   }
 
   .featured-products,
   .featured-categories {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav__breadcrumb li {
+    padding-top: 10px;
   }
 }
