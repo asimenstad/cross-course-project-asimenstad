@@ -3,26 +3,30 @@
   padding: 0;
 }
 
-h1 {
+h2 {
   font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   margin-top: 50px;
   font-size: 1.5em;
 }
 
-h2,
+h3,
 p {
   font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   color: #000;
 }
 
-h2 {
+h3 {
   font-size: 1.2em;
 }
 
 p {
   font-size: 1em;
+}
+
+.section-titles {
+  display: none;
 }
 
 /* Links */
@@ -308,7 +312,7 @@ footer .links li {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  h1 {
+  h2 {
     font-size: 2em;
   }
 
