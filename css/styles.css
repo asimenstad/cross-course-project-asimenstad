@@ -28,16 +28,21 @@ p {
 /* Links */
 
 a {
-  font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
   color: #000;
   text-decoration: none;
+  font-size: 1em;
 }
 
 .info li a,
 .dropdown__jackets li a,
 footer a {
-  font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
   color: #425c42;
+  font-weight: 400;
+}
+
+.nav__product-categories a {
+  font-weight: 500;
 }
 
 /* Navbar */
@@ -96,14 +101,13 @@ nav ul {
 }
 
 nav li {
-  color: #000;
   display: block;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
 }
 
-.products {
+.nav__product-categories {
   display: flex;
   flex-direction: column;
   order: 2;
@@ -149,10 +153,6 @@ footer a:hover {
   font-style: italic;
 }
 
-nav li:hover {
-  text-decoration: underline;
-}
-
 nav ul li:hover > ul,
 .dropdown:hover {
   visibility: visible;
@@ -194,6 +194,10 @@ nav ul li:hover > ul,
 
 /* Home page*/
 
+main {
+  padding-top: 50px;
+}
+
 .new-arrivals {
   display: grid;
   background: url(../images/new-arrivals.jpg) center bottom no-repeat;
@@ -216,21 +220,20 @@ nav ul li:hover > ul,
   border-radius: 10px;
   position: absolute;
   text-align: center;
-  border: 2.5px solid #425c42;
   justify-self: center;
   align-self: center;
 }
 
 .cta:hover,
 .cta-small:hover {
-  background-color: transparent;
+  background-color: #d9e2d9;
   color: #425c42;
 }
 
 .featured-products,
 .featured-categories {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   margin: auto;
   gap: 10px;
   max-width: calc(100% - 7%);
@@ -299,7 +302,7 @@ footer .links li {
   display: block;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
   .featured-products,
   .featured-categories {
     grid-template-columns: repeat(2, 1fr);
@@ -312,7 +315,9 @@ footer .links li {
   .new-arrivals {
     width: 100%;
   }
+}
 
+@media screen and (min-width: 600px) {
   footer div {
     display: flex;
     flex-direction: column;
@@ -369,15 +374,19 @@ footer .links li {
     position: relative;
   }
 
-  .products {
+  .nav__product-categories {
     display: flex;
     flex-direction: row;
     order: 1;
     flex: 1;
   }
 
-  .products li {
+  .nav__product-categories li {
     padding-right: 20px;
+  }
+
+  .nav__product-categories li:hover {
+    text-decoration: underline;
   }
 
   .search {
