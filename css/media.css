@@ -12,6 +12,10 @@
   .new-arrivals {
     width: 100%;
   }
+
+  .back-button {
+    margin-top: 45px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -125,5 +129,48 @@
 
   .nav__breadcrumb li {
     padding-top: 10px;
+  }
+
+  .nav__breadcrumb {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .product-specific {
+    display: flex;
+    flex-direction: row;
+    max-width: calc(100% - 100px);
+    margin: auto;
+  }
+
+  .product-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .product-thumbnails div {
+    max-width: 32%;
+  }
+
+  .product-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .product-details {
+    background-color: #d9e2d9;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .product-details-wrapper {
+    background-color: #fff;
+    padding: 10px;
   }
 }

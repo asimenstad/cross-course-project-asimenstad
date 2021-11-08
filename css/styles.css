@@ -225,6 +225,7 @@ nav li {
   flex-direction: row;
   list-style: none;
   margin-left: 50px;
+  padding-top: 50px;
 }
 
 .nav__breadcrumb li {
@@ -234,8 +235,8 @@ nav li {
 
 .back-button {
   margin-left: 50px;
-  margin-top: 45px;
-  font-size: 2em;
+  margin-top: 40px;
+  font-size: 1.7em;
   position: absolute;
 }
 
