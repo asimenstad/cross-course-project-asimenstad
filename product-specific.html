@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse our large selection of rain jackets for all kinds of adventures" />
+    <title>RainyDays | Home</title>
+    <script src="https://kit.fontawesome.com/0c995894a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nbd4exz.css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/product-specific.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <label for="hamburger-menu"><i class="fas fa-bars hamburger"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
+      <a href="#"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
+      <nav>
+        <div>
+          <ul class="nav__product-categories">
+            <li>
+              <a href="products.html">Women</a>
+              <ul class="dropdown">
+                <li><a href="products.html">New Arrivals</a></li>
+                <li><a href="products.html">Best Sellers</a></li>
+                <li>
+                  <a href="products.html">Jackets <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="products.html">All</a></li>
+                    <li><a href="products.html">Hiking</a></li>
+                    <li><a href="products.html">Fishing</a></li>
+                    <li><a href="products.html">Running</a></li>
+                    <li><a href="products.html">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Sale</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="products.html">Men</a>
+              <ul class="dropdown">
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li>
+                  <a href="products.html">Jackets <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="products.html">All</a></li>
+                    <li><a href="products.html">Hiking</a></li>
+                    <li><a href="products.html">Fishing</a></li>
+                    <li><a href="products.html">Running</a></li>
+                    <li><a href="products.html">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Sale</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form action="/action_page.php" class="search">
+            <label for="search" class="section-titles">Search products</label>
+            <input type="text" placeholder="Search products" name="search" class="search-container" />
+            <button type="submit" id="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <ul class="info">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="product-specific">
+      <section class="product-images">
+        <div class="product-image-display">
+          <img src="images/product2.jpg" alt="Product image of Anna Hiking Jacket" />
+        </div>
+        <div class="product-thumbnails">
+          <div>
+            <img src="images/product2.jpg" alt="Product image of Anna Hiking Jacket" />
+          </div>
+          <div>
+            <img src="images/product2.jpg" alt="Product image of Anna Hiking Jacket" />
+          </div>
+          <div>
+            <img src="images/product2.jpg" alt="Product image of Anna Hiking Jacket" />
+          </div>
+        </div>
+      </section>
+      <section class="product-details">
+        <div class="product-details-wrapper">
+          <div class="product-details-header">
+            <h1>Anna Hiking Jacket</h1>
+            <p class="product-specific-price">500 KR</p>
+          </div>
+          <p>
+            Anna Hiking Jacket is a softshell rain jacket. It is windproof and breathable, with a removable hood -
+            perfect for hiking!
+          </p>
+          <p>Material: 89% nylon, 11% elastane</p>
+          <span class="colour-swatch colour-swatch-one"></span>
+          <span class="colour-swatch colour-swatch-two"></span>
+          <form action="">
+            <label for="size">Size</label>
+            <select id="size" name="Size" class="cta-long cta-size">
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+            </select>
+            <input type="submit" value="Add to cart" class="cta-long" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="links">
+        <ul>
+          <li><a href="#">About RainyDays</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#"><img src="assets/icon-instagram.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-twitter.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

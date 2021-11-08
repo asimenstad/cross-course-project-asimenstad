@@ -1,0 +1,129 @@
+@media screen and (min-width: 400px) {
+  .featured-products,
+  .featured-categories,
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .new-arrivals {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 20px;
+  }
+
+  footer .links {
+    float: left;
+    margin: 3.5rem auto auto auto;
+    text-align: right;
+  }
+
+  footer .social {
+    float: right;
+    margin: 3rem auto auto auto;
+    bottom: 0;
+    text-align: left;
+  }
+
+  footer .links li {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    margin: 0;
+    text-align: left;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 50px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+    background-color: #fff;
+  }
+
+  nav div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .nav__product-categories {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+    flex: 1;
+  }
+
+  .nav__product-categories li {
+    padding-right: 20px;
+  }
+
+  .search {
+    flex-grow: 1;
+    text-align: center;
+    order: 2;
+    flex: 2;
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: right;
+    flex-wrap: nowrap;
+    order: 3;
+    flex: 1;
+    text-align: right;
+  }
+
+  .dropdown {
+    background-color: #d9e2d9;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    width: 10rem;
+    padding: 1rem 3rem;
+    display: none;
+    z-index: 1;
+  }
+
+  .dropdown__jackets {
+    display: block;
+  }
+
+  main {
+    padding-top: 110px;
+  }
+
+  .featured-products,
+  .featured-categories,
+  .products-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav__breadcrumb li {
+    padding-top: 10px;
+  }
+}
