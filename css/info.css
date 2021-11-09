@@ -6,6 +6,7 @@
   position: relative;
   max-width: calc(100% - 7%);
   margin: 20px auto;
+  margin-bottom: 50px;
 }
 
 .about-container img {
@@ -40,6 +41,7 @@
   max-width: calc(100% - 7%);
   width: 500px;
   margin: 20px auto;
+  margin-bottom: 50px;
   background-color: #d9e2d9;
 }
 

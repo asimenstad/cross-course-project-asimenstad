@@ -28,7 +28,9 @@
 }
 
 .product-details {
-  margin: 20px 0;
+  background-color: #d9e2d9;
+  padding: 30px;
+  margin-top: 10px;
 }
 
 .product-details-header {

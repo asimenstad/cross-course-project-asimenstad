@@ -80,6 +80,11 @@ footer a:hover {
   font-style: italic;
 }
 
+.cta-long:hover {
+  background-color: #fff;
+  color: #425c42;
+}
+
 /* Navbar */
 
 header {
@@ -250,13 +255,12 @@ nav li {
   text-align: center;
   justify-self: center;
   align-self: center;
-  border: none;
+  border: 1.5px solid #425c4266;
 }
 
 .cta-form {
   background-color: #fff;
   color: #425c42;
-  border: 1.5px solid #425c42;
   text-align: left;
 }
 

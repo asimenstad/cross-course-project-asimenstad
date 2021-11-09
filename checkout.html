@@ -82,14 +82,18 @@
       <a href="index.html"><i class="fas fa-chevron-left back-button"></i></a>
       <h1>Cart</h1>
       <section class="checkout">
-        <div class="checkout-sections">
+        <div class="checkout-sections checkout-items">
           <h2>Your items</h2>
-          <div>
-            <img src="images/product2.jpg" alt="Product image of Anna Hiking Jacket" />
-            <h3>Anna Hiking Jacket</h3>
-            <p>500 KR</p>
-            <p>Size: M</p>
-            <p>Colour: Black</p>
+          <div class="checkout-items__container">
+            <div class="checkout-items__images">
+              <img src="images/product2.jpg" alt="Product image of Anna Hiking Jacket" />
+            </div>
+            <div class="checkout-items__details">
+              <h3>Anna Hiking Jacket</h3>
+              <p>500 KR</p>
+              <p>Size: M</p>
+              <p>Colour: Black</p>
+            </div>
           </div>
         </div>
         <form>
@@ -116,7 +120,7 @@
             <h2>Delivery</h2>
             <span
               ><label for="standard">Standard shipping 39 KR</label>
-              <input type="radio" name="delivery" value="standard" id="standard" />
+              <input type="radio" name="delivery" value="standard" id="standard" checked="checked" />
             </span>
             <div class="divider"></div>
             <span
@@ -128,23 +132,33 @@
             <h2>Payment</h2>
             <span>
               <label for="visa">Visa</label>
-              <input type="radio" name="payment" value="visa" id="visa" />
+              <input type="radio" name="payment" value="visa" id="visa" checked="checked" />
             </span>
+            <div class="divider"></div>
             <span>
               <label for="klarna">Klarna</label> <input type="radio" name="payment" value="klarna" id="klarna" />
             </span>
+            <div class="divider"></div>
             <span>
               <label for="vipps">Vipps</label> <input type="radio" name="payment" value="vipps" id="vipps" />
             </span>
           </div>
           <div class="checkout-sections checkout-summary">
             <h2>Summary</h2>
-            <h3>Anna Hiking Jacket</h3>
-            <p>500 KR</p>
-            <h3>Standard shipping</h3>
-            <p>39 KR</p>
-            <h3>Total</h3>
-            <p>539 KR</p>
+            <span>
+              <h3>Anna Hiking Jacket</h3>
+              <p>500 KR</p>
+            </span>
+            <div class="divider"></div>
+            <span>
+              <h3>Standard shipping</h3>
+              <p>39 KR</p>
+            </span>
+            <div class="divider"></div>
+            <span>
+              <h3>Total</h3>
+              <p>539 KR</p>
+            </span>
             <input type="submit" value="complete order" class="cta-long" />
           </div>
         </form>
