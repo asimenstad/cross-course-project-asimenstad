@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse our large selection of rain jackets for all kinds of adventures" />
+    <title>RainyDays | Home</title>
+    <script src="https://kit.fontawesome.com/0c995894a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nbd4exz.css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <label for="hamburger-menu"><i class="fas fa-bars hamburger"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
+      <a href="checkout.html"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
+      <nav>
+        <div>
+          <ul class="nav__product-categories">
+            <li>
+              <a href="products.html">Women</a>
+              <ul class="dropdown">
+                <li><a href="products.html">New Arrivals</a></li>
+                <li><a href="products.html">Best Sellers</a></li>
+                <li>
+                  <a href="products.html">Jackets <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="products.html">All</a></li>
+                    <li><a href="products.html">Hiking</a></li>
+                    <li><a href="products.html">Fishing</a></li>
+                    <li><a href="products.html">Running</a></li>
+                    <li><a href="products.html">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Sale</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="products.html">Men</a>
+              <ul class="dropdown">
+                <li><a href="products.html">New Arrivals</a></li>
+                <li><a href="products.html">Best Sellers</a></li>
+                <li>
+                  <a href="products.html">Jackets <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="products.html">All</a></li>
+                    <li><a href="products.html">Hiking</a></li>
+                    <li><a href="products.html">Fishing</a></li>
+                    <li><a href="products.html">Running</a></li>
+                    <li><a href="products.html">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Sale</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form action="/action_page.php" class="search">
+            <label for="search" class="section-titles">Search products</label>
+            <input type="text" placeholder="Search products" name="search" class="search-container" />
+            <button type="submit" id="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <ul class="info">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <ul class="nav__breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li>Cart</li>
+      </ul>
+      <a href="index.html"><i class="fas fa-chevron-left back-button"></i></a>
+      <h1>Cart</h1>
+      <section class="checkout">
+        <div class="checkout-sections">
+          <h2>Your items</h2>
+          <div>
+            <img src="images/product2.jpg" alt="Product image of Anna Hiking Jacket" />
+            <h3>Anna Hiking Jacket</h3>
+            <p>500 KR</p>
+            <p>Size: M</p>
+            <p>Colour: Black</p>
+          </div>
+        </div>
+        <form>
+          <div class="checkout-sections checkout-info">
+            <h2>Your information</h2>
+            <label for="email">Email address</label>
+            <input type="email" placeholder="Email" id="email" name="email" class="cta-form" />
+            <label for="phone-number">Phone number</label>
+            <input type="tel" placeholder="Phone number" id="phone-number" name="phone-number" class="cta-form" />
+            <label for="first-name">First name</label>
+            <input type="text" placeholder="First name" id="first-name" name="first-name" class="cta-form" />
+            <label for="last-name">Last name</label>
+            <input type="text" placeholder="Last name" id="last-name" name="last-name" class="cta-form" />
+            <label for="adress">Address</label>
+            <input type="text" placeholder="Address" id="address" name="address" class="cta-form" />
+            <span>
+              <label for="city">City or town</label>
+              <input type="text" placeholder="City or town" id="city" name="city" class="cta-form" />
+              <label for="postal-code">Postal code</label>
+              <input type="number" placeholder="Postal code" id="postal-code" name="postal-code" class="cta-form" />
+            </span>
+          </div>
+          <div class="checkout-sections checkout-delivery">
+            <h2>Delivery</h2>
+            <span
+              ><label for="standard">Standard shipping 39 KR</label>
+              <input type="radio" name="delivery" value="standard" id="standard" />
+            </span>
+            <div class="divider"></div>
+            <span
+              ><label for="express">Express shipping 59 KR</label>
+              <input type="radio" name="delivery" value="express" id="express" />
+            </span>
+          </div>
+          <div class="checkout-sections checkout-payment">
+            <h2>Payment</h2>
+            <span>
+              <label for="visa">Visa</label>
+              <input type="radio" name="payment" value="visa" id="visa" />
+            </span>
+            <span>
+              <label for="klarna">Klarna</label> <input type="radio" name="payment" value="klarna" id="klarna" />
+            </span>
+            <span>
+              <label for="vipps">Vipps</label> <input type="radio" name="payment" value="vipps" id="vipps" />
+            </span>
+          </div>
+          <div class="checkout-sections checkout-summary">
+            <h2>Summary</h2>
+            <h3>Anna Hiking Jacket</h3>
+            <p>500 KR</p>
+            <h3>Standard shipping</h3>
+            <p>39 KR</p>
+            <h3>Total</h3>
+            <p>539 KR</p>
+            <input type="submit" value="complete order" class="cta-long" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="links">
+        <ul>
+          <li><a href="about.html">About RainyDays</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#"><img src="assets/icon-instagram.svg" alt="Instagram" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-facebook.svg" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-twitter.svg" alt="Twitter" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

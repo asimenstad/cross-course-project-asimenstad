@@ -236,6 +236,30 @@ nav li {
   z-index: 666;
 }
 
+/* CTA */
+
+.cta-long,
+.cta-form {
+  background-color: #425c42;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  border: none;
+}
+
+.cta-form {
+  background-color: #fff;
+  color: #425c42;
+  border: 1.5px solid #425c42;
+  text-align: left;
+}
+
 /* Footer */
 
 footer {
