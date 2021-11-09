@@ -1,5 +1,11 @@
 /* Products page*/
 
+h2 {
+  font-size: 1.2em;
+  text-align: left;
+  padding: 0;
+}
+
 .products-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -9,6 +15,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
+}
+
+.products-container div {
+  margin-bottom: 20px;
 }
 
 .products-container img {

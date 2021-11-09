@@ -4,16 +4,11 @@
   font-family: "futura-pt", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1,
 h2 {
   text-align: center;
   padding-top: 40px;
-  font-size: 1.5em;
-}
-
-h3,
-p {
-  font-style: normal;
-  color: #000;
+  font-size: 1.7em;
 }
 
 h3 {
@@ -238,6 +233,7 @@ nav li {
   margin-top: 40px;
   font-size: 1.7em;
   position: absolute;
+  z-index: 666;
 }
 
 /* Footer */
@@ -258,15 +254,16 @@ footer div {
   padding-top: 5px;
 }
 
-footer ul li {
-  display: inline-block;
-  padding: 1rem;
-}
-
-footer .links,
-footer .social {
+.links,
+.social {
   text-align: center;
   flex-direction: row;
+}
+
+.links li,
+.social li {
+  display: inline-block;
+  padding: 1rem;
 }
 
 footer .links li {

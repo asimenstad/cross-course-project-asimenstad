@@ -1,0 +1,53 @@
+/* About and contact page*/
+
+.about-container {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  max-width: calc(100% - 7%);
+  margin: 20px auto;
+}
+
+.about-container img {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.about-details {
+  background-color: #d9e2d9;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.about-container p {
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 350px;
+}
+
+.about-container span {
+  font-style: italic;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: calc(100% - 7%);
+  width: 500px;
+  margin: 20px auto;
+  background-color: #d9e2d9;
+}
+
+.contact-details h2 {
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+.contact-details p {
+  text-align: center;
+}
