@@ -1,17 +1,26 @@
+/* Checkout page and checkout success*/
+main {
+  padding-top: 50px;
+}
+
 h2 {
   padding-top: 0;
   padding-bottom: 20px;
   font-size: 1.5em;
 }
 
-.checkout {
-  display: flex;
-  flex-direction: column;
+.checkout,
+.checkout-success {
   max-width: calc(100% - 7%);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
   margin-top: 20px;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
 }
 
 .checkout img {
@@ -63,10 +72,7 @@ form div {
   padding: 20px;
 }
 
-.checkout-info span,
-.checkout-delivery span,
-.checkout-payment span,
-.checkout-summary span {
+span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -82,6 +88,34 @@ form div {
   gap: 10px;
 }
 
-.divider {
-  border-bottom: 1.5px solid #425c42;
+hr {
+  border: 0;
+  border-bottom: 1px solid #425c42;
+}
+
+.checkout-success {
+  background-color: #d9e2d9;
+  padding: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.view-order {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.view-order-title {
+  margin: 30px auto;
+}
+
+.exit {
+  float: right;
+  font-size: 2em;
+  color: #425c42;
+}
+
+.exit:hover {
+  color: #fff;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Browse our large selection of rain jackets for all kinds of adventures" />
-    <title>RainyDays | Home</title>
+    <title>RainyDays | Cart</title>
     <script src="https://kit.fontawesome.com/0c995894a1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-        <form>
+        <form method="post" action="checkout-success.html">
           <div class="checkout-sections checkout-info">
             <h2>Your information</h2>
             <label for="email">Email address</label>
@@ -122,7 +122,7 @@
               ><label for="standard">Standard shipping 39 KR</label>
               <input type="radio" name="delivery" value="standard" id="standard" checked="checked" />
             </span>
-            <div class="divider"></div>
+            <hr />
             <span
               ><label for="express">Express shipping 59 KR</label>
               <input type="radio" name="delivery" value="express" id="express" />
@@ -134,11 +134,11 @@
               <label for="visa">Visa</label>
               <input type="radio" name="payment" value="visa" id="visa" checked="checked" />
             </span>
-            <div class="divider"></div>
+            <hr />
             <span>
               <label for="klarna">Klarna</label> <input type="radio" name="payment" value="klarna" id="klarna" />
             </span>
-            <div class="divider"></div>
+            <hr />
             <span>
               <label for="vipps">Vipps</label> <input type="radio" name="payment" value="vipps" id="vipps" />
             </span>
@@ -149,12 +149,12 @@
               <h3>Anna Hiking Jacket</h3>
               <p>500 KR</p>
             </span>
-            <div class="divider"></div>
+            <hr />
             <span>
               <h3>Standard shipping</h3>
               <p>39 KR</p>
             </span>
-            <div class="divider"></div>
+            <hr />
             <span>
               <h3>Total</h3>
               <p>539 KR</p>
