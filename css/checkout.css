@@ -1,7 +1,4 @@
 /* Checkout page and checkout success*/
-main {
-  padding-top: 50px;
-}
 
 h2 {
   padding-top: 0;
@@ -72,26 +69,29 @@ form div {
   padding: 20px;
 }
 
-span {
+.checkout-info div,
+.checkout-delivery div,
+.checkout-payment div,
+.checkout-summary div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.checkout-delivery span,
-.checkout-payment span,
-.checkout-summary span,
-.view-order span {
   margin: 10px;
 }
 
-.checkout-info span {
+.checkout-info div {
+  margin: 0;
   gap: 10px;
 }
 
 hr {
   border: 0;
   border-bottom: 1px solid #425c42;
+}
+
+.cta-long {
+  margin: 20px;
+  max-width: 500px;
 }
 
 .checkout-success {

@@ -114,9 +114,9 @@
             <input type="text" placeholder="First name" id="first-name" name="first-name" class="cta-form" required />
             <label for="last-name">Last name</label>
             <input type="text" placeholder="Last name" id="last-name" name="last-name" class="cta-form" required />
-            <label for="adress">Address</label>
+            <label for="address">Address</label>
             <input type="text" placeholder="Address" id="address" name="address" class="cta-form" required />
-            <span>
+            <div>
               <label for="city">City or town</label>
               <input type="text" placeholder="City or town" id="city" name="city" class="cta-form" required />
               <label for="postal-code">Postal code</label>
@@ -128,51 +128,49 @@
                 class="cta-form"
                 required
               />
-            </span>
+            </div>
           </div>
           <div class="checkout-sections checkout-delivery">
             <h2>Delivery</h2>
-            <span
-              ><label for="standard">Standard shipping 39 KR</label>
+            <div>
+              <label for="standard">Standard shipping 39 KR</label>
               <input type="radio" name="delivery" value="standard" id="standard" checked="checked" />
-            </span>
+            </div>
             <hr />
-            <span
-              ><label for="express">Express shipping 59 KR</label>
+            <div>
+              <label for="express">Express shipping 59 KR</label>
               <input type="radio" name="delivery" value="express" id="express" />
-            </span>
+            </div>
           </div>
           <div class="checkout-sections checkout-payment">
             <h2>Payment</h2>
-            <span>
+            <div>
               <label for="visa">Visa</label>
               <input type="radio" name="payment" value="visa" id="visa" checked="checked" />
-            </span>
+            </div>
             <hr />
-            <span>
+            <div>
               <label for="klarna">Klarna</label> <input type="radio" name="payment" value="klarna" id="klarna" />
-            </span>
+            </div>
             <hr />
-            <span>
-              <label for="vipps">Vipps</label> <input type="radio" name="payment" value="vipps" id="vipps" />
-            </span>
+            <div><label for="vipps">Vipps</label> <input type="radio" name="payment" value="vipps" id="vipps" /></div>
           </div>
           <div class="checkout-sections checkout-summary">
             <h2>Summary</h2>
-            <span>
+            <div>
               <h3>Anna Hiking Jacket</h3>
               <p>500 KR</p>
-            </span>
+            </div>
             <hr />
-            <span>
+            <div>
               <h3>Standard shipping</h3>
               <p>39 KR</p>
-            </span>
+            </div>
             <hr />
-            <span>
+            <div>
               <h3>Total</h3>
               <p>539 KR</p>
-            </span>
+            </div>
             <input type="submit" value="complete order" class="cta-long" />
           </div>
         </form>
