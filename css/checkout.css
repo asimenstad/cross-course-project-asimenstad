@@ -72,7 +72,8 @@ form div {
 .checkout-info div,
 .checkout-delivery div,
 .checkout-payment div,
-.checkout-summary div {
+.checkout-summary div,
+.view-order div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
