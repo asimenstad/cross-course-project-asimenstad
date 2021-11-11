@@ -103,6 +103,7 @@
     order: 3;
     flex: 1;
     text-align: right;
+    padding-bottom: 0;
   }
 
   .dropdown {
@@ -148,14 +149,9 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-@media screen and (min-width: 1030px) {
   .product-specific {
-    display: flex;
     flex-direction: row;
-    max-width: calc(100% - 100px);
-    margin: auto;
   }
 
   .product-images {
@@ -167,7 +163,6 @@
   }
 
   .product-thumbnails {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 0;
@@ -184,7 +179,9 @@
     margin: 0;
     margin-left: 10px;
   }
+}
 
+@media screen and (min-width: 1030px) {
   .about-container {
     flex-direction: row;
   }

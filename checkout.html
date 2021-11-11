@@ -96,24 +96,38 @@
             </div>
           </div>
         </div>
-        <form action="checkout-success.html">
+        <form action="checkout-success.html" method="get">
           <div class="checkout-sections checkout-info">
             <h2>Your information</h2>
             <label for="email">Email address</label>
-            <input type="email" placeholder="Email" id="email" name="email" class="cta-form" />
+            <input type="email" placeholder="Email" id="email" name="email" class="cta-form" required />
             <label for="phone-number">Phone number</label>
-            <input type="tel" placeholder="Phone number" id="phone-number" name="phone-number" class="cta-form" />
+            <input
+              type="tel"
+              placeholder="Phone number"
+              id="phone-number"
+              name="phone-number"
+              class="cta-form"
+              required
+            />
             <label for="first-name">First name</label>
-            <input type="text" placeholder="First name" id="first-name" name="first-name" class="cta-form" />
+            <input type="text" placeholder="First name" id="first-name" name="first-name" class="cta-form" required />
             <label for="last-name">Last name</label>
-            <input type="text" placeholder="Last name" id="last-name" name="last-name" class="cta-form" />
+            <input type="text" placeholder="Last name" id="last-name" name="last-name" class="cta-form" required />
             <label for="adress">Address</label>
-            <input type="text" placeholder="Address" id="address" name="address" class="cta-form" />
+            <input type="text" placeholder="Address" id="address" name="address" class="cta-form" required />
             <span>
               <label for="city">City or town</label>
-              <input type="text" placeholder="City or town" id="city" name="city" class="cta-form" />
+              <input type="text" placeholder="City or town" id="city" name="city" class="cta-form" required />
               <label for="postal-code">Postal code</label>
-              <input type="number" placeholder="Postal code" id="postal-code" name="postal-code" class="cta-form" />
+              <input
+                type="number"
+                placeholder="Postal code"
+                id="postal-code"
+                name="postal-code"
+                class="cta-form"
+                required
+              />
             </span>
           </div>
           <div class="checkout-sections checkout-delivery">

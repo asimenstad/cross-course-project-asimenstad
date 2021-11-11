@@ -80,7 +80,8 @@ span {
 
 .checkout-delivery span,
 .checkout-payment span,
-.checkout-summary span {
+.checkout-summary span,
+.view-order span {
   margin: 10px;
 }
 
