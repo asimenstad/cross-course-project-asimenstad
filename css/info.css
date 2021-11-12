@@ -1,12 +1,16 @@
 /* About and contact page*/
 
-.about-container {
+.about-container,
+.contact-container {
   display: flex;
-  flex-direction: column-reverse;
   position: relative;
   max-width: calc(100% - 7%);
   margin: 20px auto;
   margin-bottom: 50px;
+}
+
+.about-container {
+  flex-direction: column-reverse;
 }
 
 .about-container img {
@@ -34,22 +38,18 @@
   font-style: italic;
 }
 
-.contact-details {
-  display: flex;
+.contact-container {
   flex-direction: column;
-  position: relative;
-  max-width: calc(100% - 7%);
   width: 500px;
-  margin: 20px auto;
-  margin-bottom: 50px;
   background-color: #d9e2d9;
+  padding-bottom: 30px;
 }
 
-.contact-details h2 {
+.contact-container h2 {
   font-size: 1.2em;
   padding-bottom: 10px;
 }
 
-.contact-details p {
+.contact-container p {
   text-align: center;
 }
