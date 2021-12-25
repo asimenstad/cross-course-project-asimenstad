@@ -121,8 +121,10 @@ hr {
   float: right;
   font-size: 2em;
   color: #425c42;
+  transition: 0.3s;
 }
 
 .exit:hover {
   color: #fff;
+  transition: 0.3s;
 }
