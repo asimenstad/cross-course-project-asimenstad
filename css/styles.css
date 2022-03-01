@@ -81,11 +81,11 @@ footer a:hover {
 }
 
 .nav__product-categories li:hover,
-.popular-products a:hover,
-.products-container a:hover {
+.popular-products:hover > a,
+.products-container div:hover > a {
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
 }
 
 .cta-long:hover {
