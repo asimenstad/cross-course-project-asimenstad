@@ -51,6 +51,7 @@
   header {
     margin: 0;
     text-align: left;
+    position: relative;
   }
 
   header label {
@@ -119,10 +120,6 @@
 
   .dropdown__jackets {
     display: block;
-  }
-
-  main {
-    padding-top: 110px;
   }
 
   .featured-products,
