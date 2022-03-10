@@ -22,3 +22,9 @@ productSpecificContainer.innerHTML += `<section class="product-image"><img src="
 <input type="submit" value="Add to cart" class="cta-long" />
 </form>
 </section>`;
+
+const breadcrumbNav = document.querySelector(".details-nav__breadcrumb");
+const liProductName = document.createElement("li");
+
+breadcrumbNav.append(liProductName);
+liProductName.innerHTML = `<p>${product.name}</p>`;

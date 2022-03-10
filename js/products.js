@@ -7,7 +7,7 @@ const products = [
       "A lightweight rain jacket. It is windproof and breathable, with a removable hood and ultrasonically welded seams.",
     material: "89% nylon, 11% polyurethane",
     id: 1,
-    featured: true,
+    featured: false,
   },
   {
     name: "Skye Jacket",
@@ -30,8 +30,8 @@ const products = [
     featured: false,
   },
   {
-    name: "Osaka Jacket",
-    price: 500,
+    name: "Sapporo Jacket",
+    price: 700,
     image: "../images/product4.jpg",
     description:
       "A lightweight rain jacket. It is windproof and breathable, with a removable hood and ultrasonically welded seams.",
@@ -50,7 +50,7 @@ const products = [
     featured: false,
   },
   {
-    name: "Oslo Jacket",
+    name: "Dublin Jacket",
     price: 570,
     image: "../images/product6.jpg",
     description:
@@ -100,7 +100,7 @@ const products = [
     featured: false,
   },
   {
-    name: "Sapporo Jacket",
+    name: "Helsinki Jacket",
     price: 600,
     image: "../images/product11.jpg",
     description:
@@ -117,20 +117,20 @@ const products = [
       "A lightweight rain jacket. It is windproof and breathable, with a removable hood and ultrasonically welded seams.",
     material: "89% nylon, 11% polyurethane",
     id: 12,
-    featured: false,
+    featured: true,
   },
   {
-    name: "Helsinki Jacket",
+    name: "Lima Jacket",
     price: 500,
     image: "../images/product13.jpg",
     description:
       "A lightweight rain jacket. It is windproof and breathable, with a removable hood and ultrasonically welded seams.",
     material: "89% nylon, 11% polyurethane",
     id: 13,
-    featured: true,
+    featured: false,
   },
   {
-    name: "London Jacket",
+    name: "Venice Jacket",
     price: 450,
     image: "../images/product14.jpg",
     description:
@@ -140,14 +140,14 @@ const products = [
     featured: false,
   },
   {
-    name: "Lima Jacket",
+    name: "Maui Jacket",
     price: 500,
     image: "../images/product15.jpg",
     description:
       "A lightweight rain jacket. It is windproof and breathable, with a removable hood and ultrasonically welded seams.",
     material: "89% nylon, 11% polyurethane",
     id: 15,
-    featured: true,
+    featured: false,
   },
   {
     name: "Vienna Jacket",
