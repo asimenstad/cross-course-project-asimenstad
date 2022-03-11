@@ -45,10 +45,7 @@ h2 {
   font-size: 1.5em;
 }
 
-.product-details form {
+.size-select {
   padding-top: 30px;
-}
-
-select {
   margin: 10px 0;
 }

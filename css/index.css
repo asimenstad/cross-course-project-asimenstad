@@ -4,8 +4,7 @@ main {
 
 .new-arrivals {
   display: grid;
-  background: url(../images/new-arrivals.jpg) center bottom no-repeat;
-  background-size: cover;
+  background: url(../images/new-arrivals.jpg) center bottom/cover no-repeat;
   min-height: 70vh;
   position: relative;
   max-width: calc(100% - 7%);
