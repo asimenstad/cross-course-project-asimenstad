@@ -48,14 +48,16 @@ function addItem(event) {
   addToCart(cartArray);
 }
 
+const cartItems = JSON.parse(localStorage.getItem("cartList"));
+
 function addToCart() {
-  bla.innerHTML = "";
-  const cartItems = JSON.parse(localStorage.getItem("cartList"));
+  cartContainer.innerHTML = "";
+
   total += product.price;
   cartItems.forEach(function () {
-    bla.innerHTML += ` <div>
-        <h3>${product.name}</h3>
-      </div>`;
+    cartContainer.innerHTML += ` <div>
+          <h3>${product.name}</h3>
+        </div>`;
   });
 }
 */

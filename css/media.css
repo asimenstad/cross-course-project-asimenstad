@@ -121,6 +121,12 @@
     z-index: 1;
   }
 
+  .nav__product-categories li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+
   .dropdown__jackets {
     display: block;
   }

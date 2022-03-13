@@ -80,7 +80,6 @@ footer a:hover {
   transition: 0.3s;
 }
 
-.nav__product-categories li:hover,
 .featured-products div:hover > h3,
 .products-container div:hover > h2 {
   text-decoration: underline;
