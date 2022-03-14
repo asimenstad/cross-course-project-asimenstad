@@ -30,7 +30,9 @@ main {
 }
 
 .categories {
-  display: inline-grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .featured-products img,
