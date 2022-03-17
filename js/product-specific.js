@@ -31,33 +31,3 @@ breadcrumbNav.append(liProductName);
 liProductName.innerHTML = `<p>${product.name}</p>`;
 
 document.title = `RainyDays | ${product.name}`;
-
-/*
-/// Add the products to cart
-const cartButton = document.querySelector(".add-to-cart-button");
-const cartContainer = document.querySelector(".checkout-items__container");
-const cartDetails = document.querySelector(".checkout-items__details");
-const bla = document.querySelector("footer");
-let cartArray = [];
-let total = 0;
-cartButton.addEventListener("click", addItem);
-
-function addItem(event) {
-  cartArray.push(product);
-  localStorage.setItem("cartList", JSON.stringify(cartArray));
-  addToCart(cartArray);
-}
-
-const cartItems = JSON.parse(localStorage.getItem("cartList"));
-
-function addToCart() {
-  cartContainer.innerHTML = "";
-
-  total += product.price;
-  cartItems.forEach(function () {
-    cartContainer.innerHTML += ` <div>
-          <h3>${product.name}</h3>
-        </div>`;
-  });
-}
-*/

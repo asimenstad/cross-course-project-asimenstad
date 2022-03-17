@@ -103,38 +103,78 @@
           <div id="checkout-items__details"></div>
           <div id="checkout-items__container"></div>
         </div>
-        <form action="checkout-success.html" method="get">
+        <form action="checkout-success.html" method="get" id="checkout-form">
           <div class="checkout-sections checkout-info">
             <h2>Your information</h2>
-            <label for="email">Email address</label>
-            <input type="email" placeholder="Email" id="email" name="email" class="cta-form" required />
-            <label for="phone-number">Phone number</label>
-            <input
-              type="tel"
-              placeholder="Phone number"
-              id="phone-number"
-              name="phone-number"
-              class="cta-form"
-              required
-            />
-            <label for="first-name">First name</label>
-            <input type="text" placeholder="First name" id="first-name" name="first-name" class="cta-form" required />
-            <label for="last-name">Last name</label>
-            <input type="text" placeholder="Last name" id="last-name" name="last-name" class="cta-form" required />
-            <label for="address">Address</label>
-            <input type="text" placeholder="Address" id="address" name="address" class="cta-form" required />
-            <div>
-              <label for="city">City or town</label>
-              <input type="text" placeholder="City or town" id="city" name="city" class="cta-form" required />
-              <label for="postal-code">Postal code</label>
+            <div class="form-input">
+              <label for="email">Email address</label>
               <input
-                type="number"
-                placeholder="Postal code"
-                id="postal-code"
-                name="postal-code"
-                class="cta-form"
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+                class="cta-form checkout-input"
                 required
               />
+              <i class="fas fa-check valid-input" id="valid-email"></i>
+              <i class="fas fa-times invalid-input" id="invalid-email"></i>
+              <div><p class="error-input" id="error-email">Please enter a valid email</p></div>
+            </div>
+            <div class="form-input">
+              <label for="phone-number">Phone number</label>
+              <input
+                type="tel"
+                placeholder="Phone number"
+                id="phone-number"
+                name="phone-number"
+                class="cta-form checkout-input"
+                required
+              />
+              <i class="fas fa-check valid-input" id="valid-phone"></i>
+              <i class="fas fa-times invalid-input" id="invalid-phone"></i>
+              <div><p class="error-input" id="error-phone">Please enter a valid phone number</p></div>
+            </div>
+            <div class="form-input">
+              <label for="first-name">First name</label>
+              <input
+                type="text"
+                placeholder="First name"
+                id="first-name"
+                name="first-name"
+                class="cta-form checkout-input"
+                required
+              />
+              <i class="fas fa-check valid-input" id="valid-firstname"></i>
+              <i class="fas fa-times invalid-input" id="invalid-firstname"></i>
+              <div><p class="error-input" id="error-firstname">Please enter your first name</p></div>
+            </div>
+            <div class="form-input">
+              <label for="last-name">Last name</label>
+              <input
+                type="text"
+                placeholder="Last name"
+                id="last-name"
+                name="last-name"
+                class="cta-form checkout-input"
+                required
+              />
+              <i class="fas fa-check valid-input" id="valid-lastname"></i>
+              <i class="fas fa-times invalid-input" id="invalid-lastname"></i>
+              <div><p class="error-input" id="error-lastname">Please enter your last name</p></div>
+            </div>
+            <div class="form-input">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                placeholder="Address"
+                id="address"
+                name="address"
+                class="cta-form checkout-input"
+                required
+              />
+              <i class="fas fa-check valid-input" id="valid-address"></i>
+              <i class="fas fa-times invalid-input" id="invalid-address"></i>
+              <div><p class="error-input" id="error-address">Please enter your address</p></div>
             </div>
           </div>
           <div class="checkout-sections checkout-delivery">
@@ -172,8 +212,6 @@
         </form>
       </section>
     </main>
-    <script src="js/products.js"></script>
-    <script src="js/productSpecific.js"></script>
     <footer>
       <div class="links">
         <ul>
@@ -196,6 +234,7 @@
       </div>
     </footer>
     <script src="js/products.js"></script>
-    <script src="js/cart.js"></script>
+    <script src="js/add-to-cart.js"></script>
+    <script src="js/validate-form.js"></script>
   </body>
 </html>
