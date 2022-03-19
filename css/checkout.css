@@ -151,3 +151,24 @@ hr {
   color: #fff;
   transition: 0.3s;
 }
+
+/* Cart items*/
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-items img {
+  max-width: 100px;
+}
+
+.cart-item {
+  display: flex;
+}
+
+.cart-item__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}

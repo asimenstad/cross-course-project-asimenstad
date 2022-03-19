@@ -1,17 +1,7 @@
-/// Add the products to cart
 const cartButton = document.querySelector(".add-to-cart-button");
-const cartCounter = document.querySelector(".cart-counter p");
 let cartArray = [];
 
 cartButton.addEventListener("click", addAmount);
-
-function loadCartCounter() {
-  let productCounter = localStorage.getItem("cartNumber");
-
-  if (productCounter) {
-    cartCounter.textContent = productCounter;
-  }
-}
 
 function addAmount() {
   let productCounter = localStorage.getItem("cartNumber");
@@ -31,11 +21,10 @@ function addAmount() {
 }
 
 function addItem() {
-  cartArray.push(product);
-
-  localStorage.setItem("productsInCart", JSON.stringify(cartArray));
   cartArray = localStorage.getItem("productsInCart");
   cartArray = JSON.parse(cartArray);
+  cartArray.push(product);
+  localStorage.setItem("productsInCart", JSON.stringify(cartArray));
 }
 
 function totalPrice() {
@@ -48,5 +37,3 @@ function totalPrice() {
     localStorage.setItem("totalPrice", product.price);
   }
 }
-
-loadCartCounter();
