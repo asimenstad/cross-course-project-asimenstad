@@ -172,3 +172,9 @@ hr {
   flex-direction: column;
   margin-left: 20px;
 }
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
