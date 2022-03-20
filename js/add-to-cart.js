@@ -1,5 +1,6 @@
 const cartButton = document.querySelector(".add-to-cart-button");
 let cartArray = [];
+
 cartButton.addEventListener("click", addAmount);
 
 function addAmount() {
