@@ -4,7 +4,6 @@ const cartTotal = document.querySelector(".cart-total");
 function addProducts() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
-  console.log(cartItems);
   for (let i = 0; i < cartItems.length; i++) {
     cartContainer.innerHTML += ` <div class="cart-item">
     <div class="cart-item__product">
