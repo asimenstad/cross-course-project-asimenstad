@@ -20,7 +20,7 @@ function addAmount() {
 }
 
 function addItem() {
-  cartArray = localStorage.getItem("productsInCart");
+  let cartArray = localStorage.getItem("productsInCart");
   cartArray = JSON.parse(cartArray);
   cartArray.push(product);
   localStorage.setItem("productsInCart", JSON.stringify(cartArray));
