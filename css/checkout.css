@@ -153,8 +153,16 @@ hr {
 }
 
 /* Cart items*/
-.cart-items {
+
+.cart-items,
+.cart-item,
+.cart-item__product,
+.cart-item__info,
+.cart-total {
   display: flex;
+}
+
+.cart-items {
   flex-direction: column;
   gap: 10px;
 }
@@ -164,17 +172,15 @@ hr {
 }
 
 .cart-item {
-  display: flex;
+  justify-content: space-between;
 }
 
 .cart-item__info {
-  display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
 
 .cart-total {
-  display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
