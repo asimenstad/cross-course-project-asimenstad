@@ -9,4 +9,3 @@ function loadCartCounter() {
 }
 
 loadCartCounter();
-console.log(cartCounter);
