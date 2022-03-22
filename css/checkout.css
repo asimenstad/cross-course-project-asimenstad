@@ -154,12 +154,19 @@ hr {
 
 /* Cart items*/
 
+.cart-items-header,
 .cart-items,
 .cart-item,
 .cart-item__product,
 .cart-item__info,
 .cart-total {
   display: flex;
+}
+
+.cart-items-header {
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .cart-items {

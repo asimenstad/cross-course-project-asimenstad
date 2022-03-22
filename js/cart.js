@@ -6,6 +6,8 @@ function addProducts() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
 
+  cartTotalItems.innerHTML = `<h2>(${cartItems.length})</h2>`;
+
   for (let i = 0; i < cartItems.length; i++) {
     cartContainer.innerHTML += ` <div class="cart-item">
     <div class="cart-item__product">
