@@ -20,7 +20,6 @@ function addProducts() {
   </div>  
   <hr />`;
   }
-  cartTotalItems.innerHTML = `<h3>(${cartItems.length})</h3>`;
 }
 addProducts();
 
