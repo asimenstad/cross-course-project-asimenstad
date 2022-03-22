@@ -104,7 +104,10 @@
             <h2>Your items</h2>
             <span class="total-items"></span>
           </div>
-          <div class="cart-items"></div>
+          <div class="cart-items">
+            <p>Your cart is empty.</p>
+            <a href="products.html" class="cta cta-cart">Back to shop</a>
+          </div>
           <div class="cart-total"></div>
         </div>
         <form action="checkout-success.html" method="get" id="checkout-form">
@@ -208,9 +211,20 @@
           </div>
           <div class="checkout-sections checkout-summary">
             <h2>Summary</h2>
-            <div class="checkout-summary__items"></div>
+            <div class="checkout-summary__items">
+              <h3>Order value</h3>
+              <h3 class="order-value"></h3>
+            </div>
             <hr />
-            <div class="checkout-summary__total"></div>
+            <div class="checkout-summary__delivery">
+              <h3>Delivery</h3>
+              <h3 class="delivery-value"></h3>
+            </div>
+            <hr />
+            <div class="checkout-summary__total">
+              <h3>Total</h3>
+              <h3 class="total-value"></h3>
+            </div>
             <input type="submit" value="complete order" class="cta-long" />
           </div>
         </form>

@@ -172,6 +172,7 @@ hr {
 .cart-items {
   flex-direction: column;
   gap: 10px;
+  text-align: center;
 }
 
 .cart-items img {
@@ -190,4 +191,14 @@ hr {
 .cart-total {
   justify-content: space-between;
   margin-top: 20px;
+}
+
+.cta-cart {
+  position: static;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.cta-cart:hover {
+  background-color: #fff;
 }
