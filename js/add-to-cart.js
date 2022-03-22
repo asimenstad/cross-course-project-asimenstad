@@ -1,5 +1,6 @@
 const cartButton = document.querySelector(".add-to-cart-button");
 let cartArray = [];
+
 cartButton.addEventListener("click", addAmount);
 
 function addAmount() {
@@ -20,8 +21,8 @@ function addAmount() {
 }
 
 function addItem() {
-  cartArray = localStorage.getItem("productsInCart");
-  cartArray = JSON.parse(cartArray);
+  let cartArray = [];
+  cartArray = JSON.parse(localStorage.getItem("productsInCart")) || [];
 
   cartArray.push(product);
   localStorage.setItem("productsInCart", JSON.stringify(cartArray));
