@@ -18,7 +18,7 @@ h2 {
 }
 
 .product-image {
-  max-width: 700px;
+  max-width: 750px;
 }
 
 .product-specific img {
@@ -48,4 +48,36 @@ h2 {
 .size-select {
   padding-top: 30px;
   margin: 10px 0;
+}
+
+/* Cart popup */
+
+.cart {
+  position: relative;
+}
+
+.cart-popup {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  width: 150px;
+  height: 180px;
+  background-color: #d9e2d9;
+  z-index: 9999;
+  display: none;
+}
+
+.cart-popup h2 {
+  margin-bottom: 20px;
+}
+
+.cart-popup h2,
+.cart-popup h3,
+.cart-popup p {
+  margin-left: 15px;
+  text-align: left;
+}
+
+.cart-popup h3 {
+  font-size: 1em;
 }

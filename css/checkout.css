@@ -70,23 +70,6 @@ form div {
   margin-top: 20px;
 }
 
-.checkout-items__container {
-  display: flex;
-  flex-direction: row;
-}
-
-.checkout-items__images {
-  max-width: 150px;
-}
-
-.checkout-items__details {
-  margin-left: 20px;
-}
-
-.checkout-items__details h3 {
-  padding-bottom: 10px;
-}
-
 .checkout-items,
 .checkout-info,
 .checkout-delivery,
@@ -171,12 +154,11 @@ hr {
 
 .cart-items {
   flex-direction: column;
-  gap: 10px;
-  text-align: center;
+  gap: 20px;
 }
 
 .cart-items img {
-  max-width: 100px;
+  max-width: 90px;
 }
 
 .cart-item {
@@ -190,7 +172,7 @@ hr {
 
 .cart-total {
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .cta-cart {
@@ -201,4 +183,8 @@ hr {
 
 .cta-cart:hover {
   background-color: #fff;
+}
+
+.empty-cart {
+  text-align: center;
 }

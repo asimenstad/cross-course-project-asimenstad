@@ -1,5 +1,6 @@
 const cartButton = document.querySelector(".add-to-cart-button");
 let cartArray = [];
+const popup = document.querySelector(".cart-popup");
 
 cartButton.addEventListener("click", addAmount);
 
@@ -18,6 +19,7 @@ function addAmount() {
 
   addItem();
   totalPrice();
+  displayPopup();
 }
 
 function addItem() {
@@ -37,4 +39,14 @@ function totalPrice() {
   } else {
     localStorage.setItem("totalPrice", product.price);
   }
+}
+
+function displayPopup() {
+  popup.style.display = "block";
+  popup.innerHTML = `<h2>Added to cart!</h2>
+  <h3>${product.name}</h3>
+  <p>${product.price} KR</p>`;
+  setTimeout(function () {
+    popup.style.display = "none";
+  }, 3000);
 }

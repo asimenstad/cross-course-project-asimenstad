@@ -23,7 +23,7 @@ function addProducts() {
 <p>Size: </p>
 </div>
 </div>
-<div class="remove-item"><i class="far fa-trash-alt remove"></i></div>
+<div class="remove-item"><a href="#"><i class="far fa-trash-alt remove"></i></a></div>
   </div>  
   <hr />`;
   }

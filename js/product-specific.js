@@ -23,7 +23,7 @@ productSpecificContainer.innerHTML += `<section class="product-image"><img src="
 <button class="cta-long add-to-cart-button" data-product="${product.id}">Add to cart</button>
 </section>`;
 
-/// Display the name of product in breadcrumb nav and title
+/// Display name of product in breadcrumb nav and title
 const breadcrumbNav = document.querySelector(".details-nav__breadcrumb");
 const liProductName = document.createElement("li");
 
