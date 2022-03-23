@@ -2,6 +2,10 @@ main {
   padding-top: 30px;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 .new-arrivals {
   display: grid;
   background: url(../images/new-arrivals.jpg) center bottom/cover no-repeat;
@@ -10,6 +14,7 @@ main {
   max-width: calc(100% - 7%);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .featured-products,
@@ -18,15 +23,15 @@ main {
   grid-template-columns: repeat(1, 1fr);
   gap: 10px;
   max-width: calc(100% - 7%);
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .featured-products div {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .categories {
