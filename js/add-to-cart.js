@@ -44,9 +44,14 @@ function totalPrice() {
 function displayPopup() {
   popup.style.display = "block";
   popup.innerHTML = `<h2>Added to cart!</h2>
+  <div class="popup-product">
+  <img src="${product.image}" />
+  <div>
   <h3>${product.name}</h3>
-  <p>${product.price} KR</p>`;
+  <p>${product.price} KR</p>
+  </div>
+  </div>`;
   setTimeout(function () {
     popup.style.display = "none";
-  }, 3000);
+  }, 5000);
 }

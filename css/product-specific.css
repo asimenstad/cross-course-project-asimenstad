@@ -60,8 +60,7 @@ h2 {
   position: absolute;
   right: 0;
   margin-right: 50px;
-  width: 150px;
-  height: 180px;
+  padding: 10px;
   background-color: #d9e2d9;
   z-index: 9999;
   display: none;
@@ -69,12 +68,21 @@ h2 {
 
 .cart-popup h2 {
   margin-bottom: 20px;
+  padding-top: 0;
+  text-align: center;
 }
 
-.cart-popup h2,
+.popup-product {
+  display: flex;
+  gap: 10px;
+}
+
+.popup-product img {
+  width: 60px;
+}
+
 .cart-popup h3,
 .cart-popup p {
-  margin-left: 15px;
   text-align: left;
 }
 
