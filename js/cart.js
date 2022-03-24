@@ -8,6 +8,8 @@ const totalValue = document.querySelector(".total-value");
 function addProducts() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
+  let cartItemsSize = localStorage.getItem("productSize");
+  cartItemsSize = JSON.parse(cartItemsSize);
 
   cartTotalItems.innerHTML = `<h2>(${cartItems.length})</h2>`;
 
@@ -20,7 +22,7 @@ function addProducts() {
     <div class="cart-item__info">
 <h3>${cartItems[i].name}</h3>
 <p>${cartItems[i].price} KR</p>
-<p>Size: </p>
+<p class="product-size">Size: ${cartItemsSize[i]}</p>
 </div>
 </div>
 <button class="remove-item"><i class="far fa-trash-alt"></i></button>

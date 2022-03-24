@@ -1,5 +1,7 @@
 const cartButton = document.querySelector(".add-to-cart-button");
 let cartArray = [];
+let sizeArray = [];
+const sizeSelect = document.querySelector("#size");
 const popup = document.querySelector(".cart-popup");
 
 cartButton.addEventListener("click", addAmount);
@@ -18,6 +20,7 @@ function addAmount() {
   }
 
   addItem();
+  addSize();
   totalPrice();
   displayPopup();
 }
@@ -28,6 +31,13 @@ function addItem() {
 
   cartArray.push(product);
   localStorage.setItem("productsInCart", JSON.stringify(cartArray));
+}
+
+function addSize() {
+  let sizeArray = [];
+  sizeArray = JSON.parse(localStorage.getItem("productSize")) || [];
+  sizeArray.push(sizeSelect.value);
+  localStorage.setItem("productSize", JSON.stringify(sizeArray));
 }
 
 function totalPrice() {
