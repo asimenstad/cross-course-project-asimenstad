@@ -4,7 +4,11 @@ const cartTotal = document.querySelector(".cart-total");
 const orderValue = document.querySelector(".order-value");
 const deliveryValue = document.querySelector(".delivery-value");
 const totalValue = document.querySelector(".total-value");
+const standard = document.querySelector("#standard");
+const express = document.querySelector("#express");
+const delivery = document.querySelector(".checkout-delivery");
 
+/// Display the products at checkout
 function addProducts() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
@@ -32,11 +36,29 @@ function addProducts() {
 }
 addProducts();
 
-function addTotal() {
-  let totalSum = localStorage.getItem("totalPrice");
-  totalSum = JSON.parse(totalSum);
+/// Display the sum of the products
+let totalSum = localStorage.getItem("totalPrice");
+totalSum = JSON.parse(totalSum);
 
+function addSum() {
   cartTotal.innerHTML = `<h3>Sum</h3><h3>${totalSum} KR</h3>`;
-  orderValue.textContent = totalSum;
+  orderValue.textContent = `${totalSum} KR`;
 }
-addTotal();
+addSum();
+
+/// Choose delivery and display total sum
+delivery.addEventListener("change", addDelivery);
+
+const standardShipping = 39;
+const expressShipping = 59;
+
+function addDelivery() {
+  if (standard.checked) {
+    deliveryValue.innerHTML = `${standardShipping} KR`;
+    totalValue.innerHTML = `${totalSum + standardShipping} KR`;
+  } else {
+    deliveryValue.innerHTML = `${expressShipping} KR`;
+    totalValue.innerHTML = `${totalSum + expressShipping} KR`;
+  }
+}
+addDelivery();
