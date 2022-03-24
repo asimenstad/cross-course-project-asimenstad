@@ -188,3 +188,10 @@ hr {
 .empty-cart {
   text-align: center;
 }
+
+.remove-item {
+  border: none;
+  height: 20px;
+  background-color: rgba(100, 100, 100, 0);
+  cursor: pointer;
+}
