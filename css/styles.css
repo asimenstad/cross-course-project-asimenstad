@@ -138,13 +138,9 @@ header {
   border-radius: 50%;
   color: #fff;
   background-color: #425c42;
-}
-
-.cart-counter p {
-  margin-top: 1px;
-  margin-right: 1px;
-  text-align: center;
   font-size: 0.9em;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .logo {

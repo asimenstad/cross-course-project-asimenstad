@@ -42,7 +42,7 @@ let totalSum = localStorage.getItem("totalPrice");
 totalSum = JSON.parse(totalSum);
 
 function addSum() {
-  cartTotal.innerHTML = `<h3>Sum</h3><h3>${totalSum} KR</h3>`;
+  cartTotal.innerHTML = `<p>Sum</p><p>${totalSum} KR</p>`;
   orderValue.textContent = `${totalSum} KR`;
 }
 addSum();

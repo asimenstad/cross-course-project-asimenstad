@@ -1,4 +1,4 @@
-const cartCounter = document.querySelector(".cart-counter p");
+const cartCounter = document.querySelector(".cart-counter");
 
 function loadCartCounter() {
   let productCounter = localStorage.getItem("cartNumber");
