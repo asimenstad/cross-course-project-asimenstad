@@ -1,3 +1,4 @@
+const form = document.querySelector("#checkout-form");
 const cartTotalItems = document.querySelector(".total-items");
 const cartContainer = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
@@ -62,3 +63,10 @@ function addDelivery() {
   }
 }
 addDelivery();
+
+/// Clear localStorage when items are purchased
+form.addEventListener("submit", clearCart);
+
+function clearCart() {
+  localStorage.clear();
+}

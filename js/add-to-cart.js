@@ -25,6 +25,7 @@ function addAmount() {
   displayPopup();
 }
 
+/// Add items to local storage
 function addItem() {
   let cartArray = [];
   cartArray = JSON.parse(localStorage.getItem("productsInCart")) || [];
@@ -33,6 +34,7 @@ function addItem() {
   localStorage.setItem("productsInCart", JSON.stringify(cartArray));
 }
 
+/// Add size to local storage
 function addSize() {
   let sizeArray = [];
   sizeArray = JSON.parse(localStorage.getItem("productSize")) || [];
@@ -40,6 +42,7 @@ function addSize() {
   localStorage.setItem("productSize", JSON.stringify(sizeArray));
 }
 
+/// Add price to local storage
 function totalPrice() {
   let total = localStorage.getItem("totalPrice");
 
@@ -51,6 +54,7 @@ function totalPrice() {
   }
 }
 
+/// Popup
 function displayPopup() {
   popup.style.display = "block";
   popup.innerHTML = `<h2>Added to cart!</h2>
