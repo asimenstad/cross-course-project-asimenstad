@@ -26,8 +26,11 @@ productSpecificContainer.innerHTML += `<section class="product-image"><img src="
 /// Display name of product in breadcrumb nav and title
 const breadcrumbNav = document.querySelector(".details-nav__breadcrumb");
 const liProductName = document.createElement("li");
+const sectionTitle = document.querySelector(".section-titles");
 
 breadcrumbNav.append(liProductName);
 liProductName.innerHTML = `<p>${product.name}</p>`;
 
 document.title = `RainyDays | ${product.name}`;
+
+sectionTitle.textContent = product.name;
