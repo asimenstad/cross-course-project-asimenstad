@@ -9,7 +9,7 @@ const standard = document.querySelector("#standard");
 const express = document.querySelector("#express");
 const delivery = document.querySelector(".checkout-delivery");
 
-/// Display the products at checkout
+/// Add products to checkout
 function addProducts() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
@@ -30,7 +30,7 @@ function addProducts() {
 <p class="product-size">Size: ${cartItemsSize[i]}</p>
 </div>
 </div>
-<button class="remove-item"><i class="far fa-trash-alt"></i></button>
+<button class="remove-item" ><i class="far fa-trash-alt"></i></button>
   </div>  
   <hr />`;
   }

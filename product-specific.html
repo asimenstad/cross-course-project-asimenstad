@@ -99,7 +99,23 @@
         <li>/</li>
       </ul>
       <a href="products.html"><i class="fas fa-chevron-left back-button"></i></a>
-      <section class="product-specific"><h2 class="section-titles">Specific product</h2></section>
+      <section class="product-specific">
+        <h2 class="section-titles">Specific product</h2>
+        <section class="product-image"></section>
+        <section class="product-details">
+          <div class="product-details-header"></div>
+          <div class="product-details-description"></div>
+          <div class="size-select">
+            <label for="size">Size:</label>
+            <select id="size" name="size" class="cta-long cta-form">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <button class="cta-long add-to-cart-button">Add to cart</button>
+        </section>
+      </section>
     </main>
     <footer>
       <div class="links">
@@ -122,7 +138,6 @@
         </ul>
       </div>
     </footer>
-    <script src="js/products.js"></script>
     <script src="js/product-specific.js"></script>
     <script src="js/add-to-cart.js"></script>
     <script src="js/product-counter.js"></script>

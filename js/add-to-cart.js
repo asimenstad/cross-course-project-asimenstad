@@ -48,9 +48,9 @@ function totalPrice() {
 
   if (total !== null) {
     total = parseInt(total);
-    localStorage.setItem("totalPrice", total + product.price);
+    localStorage.setItem("totalPrice", total + product.prices.price);
   } else {
-    localStorage.setItem("totalPrice", product.price);
+    localStorage.setItem("totalPrice", product.prices.price);
   }
 }
 
@@ -59,10 +59,10 @@ function displayPopup() {
   popup.style.display = "block";
   popup.innerHTML = `<h2>Added to cart!</h2>
   <div class="popup-product">
-  <img src="${product.image}" />
+  <img src="${product.images[0].src}" />
   <div>
   <h3>${product.name}</h3>
-  <p>${product.price} KR</p>
+  <p>${product.prices.price} KR</p>
   </div>
   </div>`;
   setTimeout(function () {
