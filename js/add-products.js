@@ -17,8 +17,7 @@ fetchAPI();
 function createHtml(product) {
   console.log(product);
 
-  apiLoader.innerHTML = "";
-  apiLoader.style.height = "0";
+  apiLoader.style.display = "none";
 
   for (let i = 0; i < product.length; i++) {
     const id = product[i].id;

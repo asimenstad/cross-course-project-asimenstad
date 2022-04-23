@@ -6,8 +6,7 @@ const apiUrl =
   "https://annais.cool/projects/rainy-days/wp-json/wc/v2/products/" +
   id +
   "/?consumer_key=ck_ef07863162d60fcc6286edf428a7bc60dd0096c7&consumer_secret=cs_8fd840fe45d3792a1776e02f19e89e07772e4b5c&per_page=100";
-
-console.log(apiUrl);
+const apiLoader = document.querySelector(".api-loader");
 const productImage = document.querySelector(".product-image");
 const productHeader = document.querySelector(".product-details-header");
 const productDescription = document.querySelector(".product-details-description");
@@ -24,7 +23,7 @@ async function fetchApiDetails() {
 fetchApiDetails();
 
 function createHTML(product) {
-  console.log(product);
+  apiLoader.style.display = "none";
 
   productImage.innerHTML += `<img src="${product.images[0].src}" alt="${product.images[0].alt}"/>`;
 
