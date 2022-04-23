@@ -23,7 +23,7 @@ function addProducts() {
   for (let i = 0; i < cartItems.length; i++) {
     cartContainer.innerHTML += ` <div class="cart-item">
     <div class="cart-item__product">
-    <img src="${cartItems[i].image}" />
+    <img src="${cartItems[i].images[0].src}" />
     <div class="cart-item__info">
 <h3>${cartItems[i].name}</h3>
 <p>${cartItems[i].price} KR</p>
