@@ -3,7 +3,7 @@ cross-course-project-asimenstad created by GitHub Classroom
 
 # RainyDays
 
-![Screenshot of RainyDays](/images/rainy-days-screenshot.jpg)
+![Screenshot of RainyDays](/images/rainy-days_screenshot.jpg)
 
 An online shop selling rain jackets.
 
