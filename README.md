@@ -1,6 +1,3 @@
-# cross-course-project-asimenstad
-cross-course-project-asimenstad created by GitHub Classroom
-
 # RainyDays
 
 ![Screenshot of RainyDays](/images/rainy-days_screenshot.jpg)
