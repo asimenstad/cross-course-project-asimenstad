@@ -8,6 +8,8 @@ An online shop selling rain jackets.
 
 RainyDays is an online shop which sells rain jackets for men and women. The jackets are designed for different outdoor activities, such as hiking, fishing, skiing and running. 
 
+The products are added using the WooCommerce REST API on Wordpress.
+
 The site architecture consists of:
 
 * Home
@@ -23,6 +25,7 @@ The site architecture consists of:
 * HTML
 * CSS
 * JavaScript
+* WooCommerce REST API
 
 ## Contact
 
