@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to RainyDays. Click here for more information about us" />
+    <title>RainyDays | About us</title>
+    <script src="https://kit.fontawesome.com/0c995894a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nbd4exz.css" />
+    <!-- Hotjar Tracking Code for https://jolly-galileo-19da98.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2862013, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/info.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <label for="hamburger-menu"><i class="fas fa-bars hamburger"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
+      <a href="checkout.html"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
+      <span class="cart-counter">0</span>
+      <nav>
+        <div>
+          <ul class="nav__product-categories">
+            <li>
+              <a href="products.html">Women</a>
+              <ul class="dropdown">
+                <li><a href="products.html">New Arrivals</a></li>
+                <li><a href="products.html">Best Sellers</a></li>
+                <li>
+                  <a href="products.html">Jackets <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="products.html">All</a></li>
+                    <li><a href="products.html">Hiking</a></li>
+                    <li><a href="products.html">Fishing</a></li>
+                    <li><a href="products.html">Running</a></li>
+                    <li><a href="products.html">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Sale</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="products.html">Men</a>
+              <ul class="dropdown">
+                <li><a href="products.html">New Arrivals</a></li>
+                <li><a href="products.html">Best Sellers</a></li>
+                <li>
+                  <a href="products.html">Jackets <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="products.html">All</a></li>
+                    <li><a href="products.html">Hiking</a></li>
+                    <li><a href="products.html">Fishing</a></li>
+                    <li><a href="products.html">Running</a></li>
+                    <li><a href="products.html">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Sale</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form action="/action_page.php" class="search">
+            <label for="search" class="section-titles">Search products</label>
+            <input type="text" placeholder="Search products" name="search" id="search" class="search-container" />
+            <button type="submit" id="submit" class="search-submit"><i class="fas fa-search"></i></button>
+          </form>
+          <ul class="info">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <ul class="nav__breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li>About</li>
+      </ul>
+      <a href="index.html"><i class="fas fa-chevron-left back-button"></i></a>
+      <h1>About RainyDays</h1>
+      <div class="about-container">
+        <img src="images/about.jpg" alt="Man smiling in rain" />
+        <div class="about-details">
+          <p>
+            RainyDays was founded in 1997 and since then, our vision has been to give outdoor enthusiasts quality
+            jackets for every outdoor activity you can think of.
+          </p>
+          <p>
+            We make rain jackets in supreme quality, suitable for every weather type there is and affordable for all. In
+            close collaboration with our test team of professional adventurers, we develop high-quality jackets.
+          </p>
+          <p>
+            Our goal is to ensure you are comfortable on every adventure you go on -
+            <span>so you can keep pushing the comfort zone.</span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="links">
+        <ul>
+          <li><a href="about.html">About RainyDays</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#"><img src="assets/icon-instagram.svg" alt="Instagram" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-facebook.svg" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-twitter.svg" alt="Twitter" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/product-counter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Take a look at one of our most popular products " />
+    <title>RainyDays |</title>
+    <script src="https://kit.fontawesome.com/0c995894a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nbd4exz.css" />
+    <!-- Hotjar Tracking Code for https://jolly-galileo-19da98.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2862013, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/product-specific.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <label for="hamburger-menu"><i class="fas fa-bars hamburger"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <a href="index.html"><img src="assets/logo.png" alt="RainyDays logo" class="logo" /></a>
+      <a href="checkout.html"><img src="assets/icon-cart.svg" alt="Cart" class="cart" /></a>
+      <span class="cart-counter">0</span>
+      <div class="cart-popup"></div>
+      <nav>
+        <div>
+          <ul class="nav__product-categories">
+            <li>
+              <a href="products.html">Women</a>
+              <ul class="dropdown">
+                <li><a href="products.html">New Arrivals</a></li>
+                <li><a href="products.html">Best Sellers</a></li>
+                <li>
+                  <a href="products.html">Jackets <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="products.html">All</a></li>
+                    <li><a href="products.html">Hiking</a></li>
+                    <li><a href="products.html">Fishing</a></li>
+                    <li><a href="products.html">Running</a></li>
+                    <li><a href="products.html">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Sale</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="products.html">Men</a>
+              <ul class="dropdown">
+                <li><a href="products.html">New Arrivals</a></li>
+                <li><a href="products.html">Best Sellers</a></li>
+                <li>
+                  <a href="products.html">Jackets <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown__jackets">
+                    <li><a href="products.html">All</a></li>
+                    <li><a href="products.html">Hiking</a></li>
+                    <li><a href="products.html">Fishing</a></li>
+                    <li><a href="products.html">Running</a></li>
+                    <li><a href="products.html">Skiing</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Sale</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form action="/action_page.php" class="search">
+            <label for="search" class="section-titles">Search products</label>
+            <input type="text" placeholder="Search products" name="search" id="search" class="search-container" />
+            <button type="submit" id="submit" class="search-submit"><i class="fas fa-search"></i></button>
+          </form>
+          <ul class="info">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <ul class="nav__breadcrumb details-nav__breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li><a href="products.html">All jackets</a></li>
+        <li>/</li>
+      </ul>
+      <a href="products.html"><i class="fas fa-chevron-left back-button"></i></a>
+      <section class="product-specific">
+        <div class="api-loader">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <h2 class="section-titles">Specific product</h2>
+        <section class="product-image"></section>
+        <section class="product-details">
+          <div class="product-details-header"></div>
+          <div class="product-details-description"></div>
+          <div class="size-select">
+            <label for="size">Size:</label>
+            <select id="size" name="size" class="cta-long cta-form">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <button class="cta-long add-to-cart-button">Add to cart</button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="links">
+        <ul>
+          <li><a href="about.html">About RainyDays</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#"><img src="assets/icon-instagram.svg" alt="Instagram" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-facebook.svg" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/Icon-twitter.svg" alt="Twitter" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/product-specific.js"></script>
+    <script src="js/product-counter.js"></script>
+  </body>
+</html>
