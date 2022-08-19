@@ -110,6 +110,7 @@ function displayPopup() {
   <p>${product.price} KR</p>
   </div>
   </div>`;
+
   setTimeout(function () {
     popup.style.display = "none";
   }, 5000);
