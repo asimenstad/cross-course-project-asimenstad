@@ -9,37 +9,20 @@ const standard = document.querySelector("#standard");
 const express = document.querySelector("#express");
 const delivery = document.querySelector(".checkout-delivery");
 
+let cartItems = localStorage.getItem("productsInCart");
+cartItems = JSON.parse(cartItems);
+
+let cartItemsSize = localStorage.getItem("productSize");
+cartItemsSize = JSON.parse(cartItemsSize);
+
 /// Add products to checkout
 function addProducts() {
-  let cartItems = localStorage.getItem("productsInCart");
-  cartItems = JSON.parse(cartItems);
-  let cartItemsSize = localStorage.getItem("productSize");
-  cartItemsSize = JSON.parse(cartItemsSize);
-
   cartTotalItems.innerHTML = `<h2>(${cartItems.length})</h2>`;
 
   cartContainer.innerHTML = "";
 
-  /*
-  for (let i = 0; i < cartItems.length; i++) {
-    cartContainer.innerHTML += ` <div class="cart-item">
-    <div class="cart-item__product">
-    <img src="${cartItems[i].images[0].src}" />
-    <div class="cart-item__info">
-<h3>${cartItems[i].name}</h3>
-<p>${cartItems[i].price} KR</p>
-<p class="product-size">Size: ${cartItemsSize[i]}</p>
-</div>
-</div>
-<button class="remove-item" id="removeItem"><i class="far fa-trash-alt"></i></button>
-  </div>  
-  <hr />`;
-  }
-*/
   cartItems.forEach((item) => {
     const { name, price, images } = item;
-
-    console.log(item.images[0].src);
 
     const cartItemContainer = document.createElement("div");
     const cartItemProduct = document.createElement("div");
@@ -50,15 +33,16 @@ function addProducts() {
     const cartItemSize = document.createElement("p");
     const deleteBtn = document.createElement("button");
     const hr = document.createElement("hr");
+    const size = cartItemsSize[cartItems.indexOf(item)];
 
     cartItemContainer.classList.add("cart-item");
     cartItemProduct.classList.add("cart-item__product");
     productImg.src = images[0].src;
     cartItemInfo.classList.add("cart-item__info");
     cartItemName.textContent = name;
-    cartItemPrice.textContent = price;
+    cartItemPrice.textContent = `${price} KR`;
     cartItemSize.classList.add("product-size");
-    cartItemSize.textContent = `Size: `;
+    cartItemSize.textContent = `Size: ${size}`;
     deleteBtn.classList.add("remove-item");
     deleteBtn.innerHTML = `Remove item <i class="far fa-trash-alt"></i>`;
 
@@ -66,36 +50,49 @@ function addProducts() {
     cartItemProduct.append(productImg, cartItemInfo);
     cartItemContainer.append(cartItemProduct, deleteBtn);
     cartContainer.append(cartItemContainer, hr);
+
+    deleteBtn.addEventListener("click", () => {
+      cartItems.splice(cartItems.indexOf(item), 1);
+      cartItemsSize.splice(cartItems.indexOf(item), 1);
+      localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+      localStorage.setItem("productSize", JSON.stringify(cartItemsSize));
+      window.location.reload();
+    });
   });
 }
 addProducts();
 
 /// Display the sum of the products
-let totalSum = localStorage.getItem("totalPrice");
-totalSum = JSON.parse(totalSum);
-
 function addSum() {
-  cartTotal.innerHTML = `<p>Sum</p><p>${totalSum} KR</p>`;
-  orderValue.textContent = `${totalSum} KR`;
+  let total = parseInt(cartItems[0].price);
+  if (cartItems.length > 1) {
+    total = cartItems.reduce(function (a, b) {
+      return parseInt(a.price) + parseInt(b.price);
+    });
+  }
+
+  cartTotal.innerHTML = `<p>Sum</p><p>${total} KR</p>`;
+  orderValue.textContent = `${total} KR`;
+
+  delivery.addEventListener("change", addDelivery);
+
+  const standardShipping = 39;
+  const expressShipping = 59;
+
+  function addDelivery() {
+    if (standard.checked) {
+      deliveryValue.innerHTML = `${standardShipping} KR`;
+      totalValue.innerHTML = `${total + standardShipping} KR`;
+    } else {
+      deliveryValue.innerHTML = `${expressShipping} KR`;
+      totalValue.innerHTML = `${total + expressShipping} KR`;
+    }
+  }
+  addDelivery();
 }
 addSum();
 
 /// Choose delivery and display total sum
-delivery.addEventListener("change", addDelivery);
-
-const standardShipping = 39;
-const expressShipping = 59;
-
-function addDelivery() {
-  if (standard.checked) {
-    deliveryValue.innerHTML = `${standardShipping} KR`;
-    totalValue.innerHTML = `${totalSum + standardShipping} KR`;
-  } else {
-    deliveryValue.innerHTML = `${expressShipping} KR`;
-    totalValue.innerHTML = `${totalSum + expressShipping} KR`;
-  }
-}
-addDelivery();
 
 /// Clear localStorage when items are purchased
 form.addEventListener("submit", clearCart);

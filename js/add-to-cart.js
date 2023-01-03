@@ -21,12 +21,15 @@ function addAmount() {
 
   addItem();
   addSize();
-  totalPrice();
   displayPopup();
 }
 
 /// Add items to local storage
 function addItem() {
+  const size = { size: sizeSelect.value };
+  product.push(size);
+  console.log(product);
+
   let cartArray = [];
   cartArray = JSON.parse(localStorage.getItem("productsInCart")) || [];
 
@@ -40,18 +43,6 @@ function addSize() {
   sizeArray = JSON.parse(localStorage.getItem("productSize")) || [];
   sizeArray.push(sizeSelect.value);
   localStorage.setItem("productSize", JSON.stringify(sizeArray));
-}
-
-/// Add price to local storage
-function totalPrice() {
-  let total = localStorage.getItem("totalPrice");
-
-  if (total !== null) {
-    total = parseInt(total);
-    localStorage.setItem("totalPrice", total + product.prices.price);
-  } else {
-    localStorage.setItem("totalPrice", product.prices.price);
-  }
 }
 
 /// Popup
