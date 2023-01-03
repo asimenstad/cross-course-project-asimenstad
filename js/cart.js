@@ -30,10 +30,13 @@ function addProducts() {
 <p class="product-size">Size: ${cartItemsSize[i]}</p>
 </div>
 </div>
-<button class="remove-item" ><i class="far fa-trash-alt"></i></button>
+<button class="remove-item" id="removeItem"><i class="far fa-trash-alt"></i></button>
   </div>  
   <hr />`;
   }
+
+  const removeItemButton = document.querySelectorAll("#removeItem");
+  console.log(removeItemButton);
 }
 addProducts();
 
