@@ -15,6 +15,9 @@ cartItems = JSON.parse(cartItems);
 let cartItemsSize = localStorage.getItem("productSize");
 cartItemsSize = JSON.parse(cartItemsSize);
 
+let productCounter = localStorage.getItem("cartNumber");
+productCounter = parseInt(productCounter);
+
 /// Add products to checkout
 function addProducts() {
   cartTotalItems.innerHTML = `<h2>(${cartItems.length})</h2>`;
@@ -56,6 +59,7 @@ function addProducts() {
       cartItemsSize.splice(cartItems.indexOf(item), 1);
       localStorage.setItem("productsInCart", JSON.stringify(cartItems));
       localStorage.setItem("productSize", JSON.stringify(cartItemsSize));
+      localStorage.setItem("cartNumber", productCounter - 1);
       window.location.reload();
     });
   });
@@ -91,8 +95,6 @@ function addSum() {
   addDelivery();
 }
 addSum();
-
-/// Choose delivery and display total sum
 
 /// Clear localStorage when items are purchased
 form.addEventListener("submit", clearCart);

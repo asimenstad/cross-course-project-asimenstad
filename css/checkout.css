@@ -110,6 +110,10 @@ hr {
   max-width: 500px;
 }
 
+input[type="radio"]:checked + label {
+  font-style: italic;
+}
+
 /* Checkout success*/
 
 .checkout-success {
@@ -198,4 +202,10 @@ hr {
   height: 20px;
   background-color: rgba(100, 100, 100, 0);
   cursor: pointer;
+  align-self: center;
+}
+
+.remove-item:hover {
+  color: #425c42;
+  font-style: italic;
 }
