@@ -20,6 +20,7 @@ function addProducts() {
 
   cartContainer.innerHTML = "";
 
+  /*
   for (let i = 0; i < cartItems.length; i++) {
     cartContainer.innerHTML += ` <div class="cart-item">
     <div class="cart-item__product">
@@ -34,9 +35,38 @@ function addProducts() {
   </div>  
   <hr />`;
   }
+*/
+  cartItems.forEach((item) => {
+    const { name, price, images } = item;
 
-  const removeItemButton = document.querySelectorAll("#removeItem");
-  console.log(removeItemButton);
+    console.log(item.images[0].src);
+
+    const cartItemContainer = document.createElement("div");
+    const cartItemProduct = document.createElement("div");
+    const productImg = document.createElement("img");
+    const cartItemInfo = document.createElement("div");
+    const cartItemName = document.createElement("h3");
+    const cartItemPrice = document.createElement("p");
+    const cartItemSize = document.createElement("p");
+    const deleteBtn = document.createElement("button");
+    const hr = document.createElement("hr");
+
+    cartItemContainer.classList.add("cart-item");
+    cartItemProduct.classList.add("cart-item__product");
+    productImg.src = images[0].src;
+    cartItemInfo.classList.add("cart-item__info");
+    cartItemName.textContent = name;
+    cartItemPrice.textContent = price;
+    cartItemSize.classList.add("product-size");
+    cartItemSize.textContent = `Size: `;
+    deleteBtn.classList.add("remove-item");
+    deleteBtn.innerHTML = `Remove item <i class="far fa-trash-alt"></i>`;
+
+    cartItemInfo.append(cartItemName, cartItemPrice, cartItemSize);
+    cartItemProduct.append(productImg, cartItemInfo);
+    cartItemContainer.append(cartItemProduct, deleteBtn);
+    cartContainer.append(cartItemContainer, hr);
+  });
 }
 addProducts();
 
