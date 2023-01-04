@@ -25,10 +25,11 @@ function addProducts() {
   cartContainer.innerHTML = "";
 
   cartItems.forEach((item) => {
-    const { name, price, images } = item;
+    const { name, price, images, id } = item;
 
     const cartItemContainer = document.createElement("div");
     const cartItemProduct = document.createElement("div");
+    const cartItemLink = document.createElement("a");
     const productImg = document.createElement("img");
     const cartItemInfo = document.createElement("div");
     const cartItemName = document.createElement("h3");
@@ -40,6 +41,7 @@ function addProducts() {
 
     cartItemContainer.classList.add("cart-item");
     cartItemProduct.classList.add("cart-item__product");
+    cartItemLink.href = `product-specific.html?id=${id}`;
     productImg.src = images[0].src;
     cartItemInfo.classList.add("cart-item__info");
     cartItemName.textContent = name;
@@ -50,7 +52,8 @@ function addProducts() {
     deleteBtn.innerHTML = `Remove item <i class="far fa-trash-alt"></i>`;
 
     cartItemInfo.append(cartItemName, cartItemPrice, cartItemSize);
-    cartItemProduct.append(productImg, cartItemInfo);
+    cartItemLink.append(productImg);
+    cartItemProduct.append(cartItemLink, cartItemInfo);
     cartItemContainer.append(cartItemProduct, deleteBtn);
     cartContainer.append(cartItemContainer, hr);
 
