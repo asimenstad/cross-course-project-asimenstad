@@ -58,6 +58,7 @@ function addProducts() {
     cartContainer.append(cartItemContainer, hr);
 
     deleteBtn.addEventListener("click", () => {
+      console.log(cartItems.indexOf(item));
       cartItems.splice(cartItems.indexOf(item), 1);
       cartItemsSize.splice(cartItems.indexOf(item), 1);
       localStorage.setItem("productsInCart", JSON.stringify(cartItems));
@@ -72,12 +73,11 @@ addProducts();
 /// Display the sum of the products
 function addSum() {
   let total = parseInt(cartItems[0].price);
-  if (cartItems.length > 1) {
+  if (cartItems.length < 1) {
     total = cartItems.reduce(function (a, b) {
       return parseInt(a.price) + parseInt(b.price);
     });
   }
-
   cartTotal.innerHTML = `<p>Sum</p><p>${total} KR</p>`;
   orderValue.textContent = `${total} KR`;
 
